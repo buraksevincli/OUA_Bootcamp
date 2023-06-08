@@ -6,9 +6,9 @@ namespace GameFolders.Scripts.Abstracts.Utilities
 {
     public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
     {
-        private static volatile T instance = null;
+        private static volatile T _instance = null;
 
-        public static T Instance => instance;
+        public static T Instance => _instance;
         
         [SerializeField] private bool dontDestroyOnLoad = false;
 
@@ -21,9 +21,9 @@ namespace GameFolders.Scripts.Abstracts.Utilities
         {
             if (dontDestroyOnLoad)
             {
-                if (instance == null)
+                if (_instance == null)
                 {
-                    instance = this as T;
+                    _instance = this as T;
                     DontDestroyOnLoad(gameObject);
                 }
                 else
@@ -33,9 +33,9 @@ namespace GameFolders.Scripts.Abstracts.Utilities
             }
             else
             {
-                if (instance == null)
+                if (_instance == null)
                 {
-                    instance = this as T;
+                    _instance = this as T;
                 }
             }
         }
