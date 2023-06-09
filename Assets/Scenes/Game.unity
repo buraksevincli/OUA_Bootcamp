@@ -595,54 +595,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4865375693697990695, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.1536629
-      objectReference: {fileID: 0}
-    - target: {fileID: 4865375693697990695, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.227898
-      objectReference: {fileID: 0}
-    - target: {fileID: 4865375693697990695, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.5434952
-      objectReference: {fileID: 0}
-    - target: {fileID: 4865375693697990695, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9995543
-      objectReference: {fileID: 0}
-    - target: {fileID: 4865375693697990695, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.025182284
-      objectReference: {fileID: 0}
-    - target: {fileID: 4865375693697990695, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.016036784
-      objectReference: {fileID: 0}
-    - target: {fileID: 4865375693697990695, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.00022664563
-      objectReference: {fileID: 0}
-    - target: {fileID: 4865375693697990695, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -2.886
-      objectReference: {fileID: 0}
-    - target: {fileID: 4865375693697990695, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -1.839
-      objectReference: {fileID: 0}
-    - target: {fileID: 4865375693697990695, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 5601283119059740175, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8614184283870017066, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: ammoSpeed
-      value: 10000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
 --- !u!1001 &4591779880953907385
