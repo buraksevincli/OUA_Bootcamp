@@ -41,9 +41,9 @@ namespace GameFolders.Scripts.Concretes.Controllers
             RaycastHit hit;
             if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
             {
-                TargetController target = hit.transform.GetComponent<TargetController>();
-
-                if (target != null)
+                //TargetController target = hit.transform.GetComponent<TargetController>();
+                
+                if (hit.transform.TryGetComponent(out TargetController target))
                 {
                     target.TakeDamage(damage);
                     Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));

@@ -482,7 +482,9 @@ MonoBehaviour:
   fireRate: 15
   impactEffectWithHole: {fileID: 100002, guid: 99c73c92ac40473459640b165473206f, type: 3}
   impactEffect: {fileID: 100006, guid: 94a130fb17f1cae4388a8fe1d8bd3055, type: 3}
+  muzzleEffect: {fileID: 0}
   fpsCam: {fileID: 3307298966171482922}
+  cameraShake: {fileID: 0}
 --- !u!114 &7820882219987632685
 MonoBehaviour:
   m_ObjectHideFlags: 0
