@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7657175263327003363}
   - component: {fileID: 7648879580647231627}
   - component: {fileID: 7638265974607806715}
+  - component: {fileID: 3600425962642172205}
+  - component: {fileID: 2085196970955706721}
   m_Layer: 0
   m_Name: C_Bullet
   m_TagString: Untagged
@@ -83,3 +85,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &3600425962642172205
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662873926363506115}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &2085196970955706721
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662873926363506115}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.015
+  m_Height: 0.16
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
