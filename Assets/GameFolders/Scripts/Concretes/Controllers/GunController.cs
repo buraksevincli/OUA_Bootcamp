@@ -1,7 +1,6 @@
-using System;
 using System.Collections;
-using UnityEditor.Search;
 using UnityEngine;
+using TMPro;
 
 namespace GameFolders.Scripts.Concretes.Controllers
 {
@@ -18,6 +17,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
         [SerializeField] private GameObject impactEffect;
         [SerializeField] private ParticleSystem muzzleEffect;
 
+        [SerializeField] private TMP_Text text;
+
         [SerializeField] private Camera fpsCam;
 
         private float _nextTimeToFire;
@@ -26,11 +27,13 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             if (currentAmmo == 0)
             {
-                currentAmmo = maxAmmo; 
+                currentAmmo = maxAmmo;
+                text.text = currentAmmo.ToString();
             }
             else
             {
                 currentAmmo = availableAmmo;
+                text.text = currentAmmo.ToString();
             }
             
         }
@@ -70,6 +73,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             if (currentAmmo > 0)
             {
                 currentAmmo--;
+                text.text = currentAmmo.ToString();
             }
             else
             {
@@ -105,10 +109,12 @@ namespace GameFolders.Scripts.Concretes.Controllers
             if (currentAmmo <= 0)
             {
                 currentAmmo = maxAmmo;
+                text.text = currentAmmo.ToString();
             }
             else if (currentAmmo > maxAmmo)
             {
                 currentAmmo = maxAmmo;
+                text.text = currentAmmo.ToString();
             }
         }
     }
