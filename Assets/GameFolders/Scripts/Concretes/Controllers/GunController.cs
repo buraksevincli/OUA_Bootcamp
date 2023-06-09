@@ -11,6 +11,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         [SerializeField] private float fireRate;
         [SerializeField] private GameObject impactEffectWithHole;
         [SerializeField] private GameObject impactEffect;
+        [SerializeField] private ParticleSystem muzzleEffect;
 
         [SerializeField] private Camera fpsCam;
 
@@ -18,10 +19,20 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Update()
         {
-            if (Input.GetButton("Fire1") && Time.time >= _nextTimeToFire)
+            
+
+            if (Input.GetButtonDown("Fire1") && Time.time >= _nextTimeToFire)
+            {
+                muzzleEffect.Play();
+            }
+            else if (Input.GetButton("Fire1") && Time.time >= _nextTimeToFire)
             {
                 _nextTimeToFire = Time.time + 1f / fireRate;
                 Shoot();
+            }
+            else if (Input.GetButtonUp("Fire1"))
+            {
+                muzzleEffect.Stop();
             }
         }
 

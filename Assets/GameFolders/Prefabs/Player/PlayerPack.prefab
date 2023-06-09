@@ -76,7 +76,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1702901271501396201}
   m_Layer: 8
-  m_Name: Namlu
+  m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
