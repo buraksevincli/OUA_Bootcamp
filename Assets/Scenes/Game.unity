@@ -596,9 +596,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8614184283870017066, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: impactForce
-      value: 100
-      objectReference: {fileID: 0}
+      propertyPath: impactEffect
+      value: 
+      objectReference: {fileID: 100002, guid: 99c73c92ac40473459640b165473206f, type: 3}
+    - target: {fileID: 8614184283870017066, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: impactEffectWithHole
+      value: 
+      objectReference: {fileID: 100006, guid: 94a130fb17f1cae4388a8fe1d8bd3055, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
 --- !u!1001 &4591779880953907385

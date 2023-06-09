@@ -9,6 +9,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         [SerializeField] private float range;
         [SerializeField] private float impactForce;
         [SerializeField] private float fireRate;
+        [SerializeField] private GameObject impactEffectWithHole;
         [SerializeField] private GameObject impactEffect;
 
         [SerializeField] private Camera fpsCam;
@@ -34,9 +35,12 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 if (target != null)
                 {
                     target.TakeDamage(damage);
+                    Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
                 }
-
-                Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+                else
+                {
+                    Instantiate(impactEffectWithHole, hit.point, Quaternion.LookRotation(hit.normal));
+                }
 
                 if (hit.rigidbody != null)
                 {
