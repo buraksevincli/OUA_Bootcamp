@@ -429,13 +429,33 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 2107396944}
-    - target: {fileID: 3307298966171482922, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_FocalLength
-      value: 32.96973
+    - target: {fileID: 1797512935783604216, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialPosition.x
+      value: 0.07170716
       objectReference: {fileID: 0}
-    - target: {fileID: 3307298966171482922, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_projectionMatrixMode
-      value: 2
+    - target: {fileID: 1797512935783604216, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialPosition.y
+      value: -0.001864764
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797512935783604216, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialPosition.z
+      value: 0.03142957
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797512935783604216, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialRotation.w
+      value: 0.9932924
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797512935783604216, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialRotation.x
+      value: -0.07171653
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797512935783604216, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialRotation.y
+      value: -0.09060139
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797512935783604216, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialRotation.z
+      value: 0.0042766365
       objectReference: {fileID: 0}
     - target: {fileID: 3475752088504788290, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
       propertyPath: m_RootOrder
@@ -481,10 +501,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4769881067522512812, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5879107698077944721, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
       propertyPath: text
       value: 
       objectReference: {fileID: 2107396944}
+    - target: {fileID: 5879107698077944721, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialPosition.x
+      value: 0.04605886
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879107698077944721, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialPosition.y
+      value: 0.02937322
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879107698077944721, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialPosition.z
+      value: 0.07837151
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879107698077944721, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialRotation.w
+      value: 0.99984705
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879107698077944721, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialRotation.x
+      value: -0.008832115
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879107698077944721, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialRotation.y
+      value: -0.015082728
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879107698077944721, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: _initialRotation.z
+      value: -0.00061319664
+      objectReference: {fileID: 0}
+    - target: {fileID: 6650399854742939766, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8540727543439553308, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
       propertyPath: m_IsActive
       value: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using TMPro;
@@ -21,7 +22,18 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         [SerializeField] private Camera fpsCam;
 
+        private Animator _animator;
+        private bool _isShooting;
+        private bool _isReloading;
+        
         private float _nextTimeToFire;
+
+        private void Awake()
+        {
+            _animator = transform.GetChild(0).GetComponent<Animator>();
+
+            
+        }
 
         private void OnEnable()
         {
@@ -35,7 +47,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 currentAmmo = availableAmmo;
                 text.text = currentAmmo.ToString();
             }
-            
         }
 
         private void OnDisable()
@@ -58,12 +69,16 @@ namespace GameFolders.Scripts.Concretes.Controllers
             }
             else if (Input.GetButtonUp("Fire1"))
             {
+                _isShooting = false;
                 muzzleEffect.Stop();
+                _animator.SetBool("isShooting", _isShooting);
             }
 
             if (currentAmmo <= 0)
             {
+                _isShooting = false;
                 muzzleEffect.Stop();
+                _animator.SetBool("isShooting", _isShooting);
                 StartCoroutine(Reload());
             }
         }
@@ -72,8 +87,10 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             if (currentAmmo > 0)
             {
+                _isShooting = true;
                 currentAmmo--;
                 text.text = currentAmmo.ToString();
+                _animator.SetBool("isShooting", _isShooting);
             }
             else
             {
@@ -104,7 +121,13 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private IEnumerator Reload()
         {
-            yield return new WaitForSeconds(2f);
+            _isReloading = true;
+            _animator.SetBool("isReloading", _isReloading);
+            
+            yield return new WaitForSeconds(3f);
+
+            _isReloading = false;
+            _animator.SetBool("isReloading", _isReloading);
             
             if (currentAmmo <= 0)
             {
