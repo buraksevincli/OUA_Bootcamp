@@ -23,6 +23,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
         [SerializeField] private Camera fpsCam;
 
         private Animator _animator;
+        private AudioSource _audioSource;
+        
         private bool _isShooting;
         private bool _isReloading;
         
@@ -31,8 +33,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private void Awake()
         {
             _animator = transform.GetChild(0).GetComponent<Animator>();
-
-            
+            _audioSource = GetComponent<AudioSource>();
         }
 
         private void OnEnable()
@@ -70,6 +71,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             else if (Input.GetButtonUp("Fire1"))
             {
                 _isShooting = false;
+                _audioSource.Stop();
                 muzzleEffect.Stop();
                 _animator.SetBool("isShooting", _isShooting);
             }
@@ -77,6 +79,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             if (currentAmmo <= 0)
             {
                 _isShooting = false;
+                _audioSource.Stop();
                 muzzleEffect.Stop();
                 _animator.SetBool("isShooting", _isShooting);
                 StartCoroutine(Reload());
@@ -90,6 +93,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 _isShooting = true;
                 currentAmmo--;
                 text.text = currentAmmo.ToString();
+                _audioSource.Play();
                 _animator.SetBool("isShooting", _isShooting);
             }
             else
