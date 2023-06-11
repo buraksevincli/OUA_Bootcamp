@@ -90,6 +90,16 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
                 StartReloading();
             }
+
+            if (Input.GetKeyDown(KeyCode.R) && currentClipAmmo > 0)
+            {
+                _isShooting = false;
+
+                _audioSource.Stop();
+                muzzleEffect.Stop();
+
+                StartReloading();
+            }
                 
             if (Input.GetButtonDown("Fire1") && Time.time >= _nextTimeToFire && currentAmmo > 0)
             {
@@ -169,7 +179,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             if (!_isReloading)
             {
-                _reloadCoroutine = StartCoroutine(Reload());
+                StartCoroutine(Reload());
             }
         }
 
@@ -209,16 +219,19 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 {
                     currentAmmo = startAmmo;
                     currentClipAmmo -= startAmmo;
-                    currentAmmoText.text = currentAmmo.ToString();
-                    clipAmmoText.text = currentClipAmmo.ToString();
                 }
                 else if (currentAmmo > startAmmo && currentClipAmmo > 0)
                 {
                     currentAmmo = startAmmo;
                     currentClipAmmo -= startAmmo;
-                    currentAmmoText.text = currentAmmo.ToString();
-                    clipAmmoText.text = currentClipAmmo.ToString();
                 }
+                else if (currentAmmo > 0 && currentClipAmmo > 0)
+                {
+                    currentClipAmmo -= (startAmmo - currentAmmo);
+                    currentAmmo = startAmmo;
+                }
+                currentAmmoText.text = currentAmmo.ToString();
+                clipAmmoText.text = currentClipAmmo.ToString();
             }
             else
             {
@@ -226,16 +239,27 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 {
                     currentAmmo = currentClipAmmo;
                     currentClipAmmo = 0;
-                    currentAmmoText.text = currentAmmo.ToString();
-                    clipAmmoText.text = currentClipAmmo.ToString();
                 }
                 else if (currentAmmo > startAmmo && currentClipAmmo > 0)
                 {
                     currentAmmo = currentClipAmmo;
                     currentClipAmmo = 0;
-                    currentAmmoText.text = currentAmmo.ToString();
-                    clipAmmoText.text = currentClipAmmo.ToString();
                 }
+                else if (currentAmmo > 0 && currentClipAmmo > 0)
+                {
+                    if (currentAmmo + currentClipAmmo > startAmmo)
+                    {
+                        currentClipAmmo = (currentAmmo + currentClipAmmo) - startAmmo;
+                        currentAmmo = startAmmo;
+                    }
+                    else if (currentAmmo + currentClipAmmo <= startAmmo)
+                    {
+                        currentAmmo = currentAmmo + currentClipAmmo;
+                        currentClipAmmo = 0;
+                    }
+                }
+                currentAmmoText.text = currentAmmo.ToString();
+                clipAmmoText.text = currentClipAmmo.ToString();
             }
         }
     }
