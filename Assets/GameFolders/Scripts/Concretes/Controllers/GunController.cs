@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Serialization;
 
 namespace GameFolders.Scripts.Concretes.Controllers
 {
@@ -11,19 +12,30 @@ namespace GameFolders.Scripts.Concretes.Controllers
         [SerializeField] private float range;
         [SerializeField] private float impactForce;
         [SerializeField] private float fireRate;
-        [SerializeField] private float maxAmmo;
-        [SerializeField] private float currentAmmo;
-        [SerializeField] private float availableAmmo;
+        
+        
+        [SerializeField] private int startAmmo;
+        [SerializeField] private int currentAmmo;
+        [SerializeField] private int availableAmmo;
+        
+        [SerializeField] private int startClipAmmo;
+        [SerializeField] private int currentClipAmmo;
+        [SerializeField] private int availableClipAmmo;
+        
+        
         [SerializeField] private GameObject impactEffectWithHole;
         [SerializeField] private GameObject impactEffect;
         [SerializeField] private ParticleSystem muzzleEffect;
 
-        [SerializeField] private TMP_Text text;
+        [SerializeField] private TMP_Text currentAmmoText;
+        [SerializeField] private TMP_Text clipAmmoText;
 
         [SerializeField] private Camera fpsCam;
 
         private Animator _animator;
         private AudioSource _audioSource;
+        private WaitForSeconds _reloadTime;
+        private Coroutine _reloadCoroutine;
         
         private bool _isShooting;
         private bool _isReloading;
@@ -34,37 +46,58 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             _animator = transform.GetChild(0).GetComponent<Animator>();
             _audioSource = GetComponent<AudioSource>();
+
+            _reloadTime = new WaitForSeconds(3f);
         }
 
         private void OnEnable()
         {
-            if (currentAmmo == 0)
+            SetCurrentAmmo();
+            SetCurrentClipAmmo();
+
+            if (currentAmmo == 0 && currentClipAmmo > 0)
             {
-                currentAmmo = maxAmmo;
-                text.text = currentAmmo.ToString();
-            }
-            else
-            {
-                currentAmmo = availableAmmo;
-                text.text = currentAmmo.ToString();
+                StartCoroutine(Reload());
             }
         }
 
         private void OnDisable()
         {
             availableAmmo = currentAmmo;
+
+            availableClipAmmo = currentClipAmmo;
         }
 
         private void Update()
         {
+            _animator.SetBool("isShooting", _isShooting);
             
+            if (currentClipAmmo == 0 && currentAmmo == 0)
+            {
+                _isShooting = false;
+                currentAmmoText.text = currentAmmo.ToString();
+                clipAmmoText.text = currentClipAmmo.ToString();
+                _audioSource.Stop();
+                muzzleEffect.Stop();
+            }
 
+            if (currentAmmo <= 0 && currentClipAmmo > 0)
+            {
+                _isShooting = false;
+
+                _audioSource.Stop();
+                muzzleEffect.Stop();
+
+                StartReloading();
+            }
+                
             if (Input.GetButtonDown("Fire1") && Time.time >= _nextTimeToFire && currentAmmo > 0)
             {
                 muzzleEffect.Play();
             }
             else if (Input.GetButton("Fire1") && Time.time >= _nextTimeToFire && currentAmmo > 0)
             {
+                _isShooting = true;
                 _nextTimeToFire = Time.time + 1f / fireRate;
                 Shoot();
             }
@@ -73,18 +106,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 _isShooting = false;
                 _audioSource.Stop();
                 muzzleEffect.Stop();
-                _animator.SetBool("isShooting", _isShooting);
             }
-
-            if (currentAmmo <= 0)
-            {
-                _isShooting = false;
-                _audioSource.Stop();
-                muzzleEffect.Stop();
-                _animator.SetBool("isShooting", _isShooting);
-                StartCoroutine(Reload());
-            }
-
+            
             if (Input.GetButtonDown("Fire2"))
             {
                 fpsCam.usePhysicalProperties = true;
@@ -97,11 +120,10 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Shoot()
         {
-            if (currentAmmo > 0)
+            if (currentAmmo > 0 && _isShooting)
             {
-                _isShooting = true;
                 currentAmmo--;
-                text.text = currentAmmo.ToString();
+                currentAmmoText.text = currentAmmo.ToString();
                 _audioSource.Play();
                 _animator.SetBool("isShooting", _isShooting);
             }
@@ -113,8 +135,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
             RaycastHit hit;
             if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
             {
-                //TargetController target = hit.transform.GetComponent<TargetController>();
-                
                 if (hit.transform.TryGetComponent(out TargetController target))
                 {
                     target.TakeDamage(damage);
@@ -137,20 +157,85 @@ namespace GameFolders.Scripts.Concretes.Controllers
             _isReloading = true;
             _animator.SetBool("isReloading", _isReloading);
             
-            yield return new WaitForSeconds(3f);
+            yield return _reloadTime;
 
             _isReloading = false;
             _animator.SetBool("isReloading", _isReloading);
             
-            if (currentAmmo <= 0)
+            AmmoLimitationAndSet();
+        }
+        
+        private void StartReloading()
+        {
+            if (!_isReloading)
             {
-                currentAmmo = maxAmmo;
-                text.text = currentAmmo.ToString();
+                _reloadCoroutine = StartCoroutine(Reload());
             }
-            else if (currentAmmo > maxAmmo)
+        }
+
+        private void SetCurrentAmmo()
+        {
+            if (currentAmmo == 1)
             {
-                currentAmmo = maxAmmo;
-                text.text = currentAmmo.ToString();
+                currentAmmo = startAmmo;
+                currentAmmoText.text = currentAmmo.ToString();
+            }
+            else
+            {
+                currentAmmo = availableAmmo;
+                currentAmmoText.text = currentAmmo.ToString();
+            }
+        }
+
+        private void SetCurrentClipAmmo()
+        {
+            if (currentClipAmmo == 1)
+            {
+                currentClipAmmo = startClipAmmo;
+                clipAmmoText.text = currentClipAmmo.ToString();
+            }
+            else
+            {
+                currentClipAmmo = availableClipAmmo;
+                clipAmmoText.text = currentClipAmmo.ToString();
+            }
+        }
+
+        private void AmmoLimitationAndSet()
+        {
+            if (currentClipAmmo >= startAmmo)
+            {
+                if (currentAmmo <= 0 && currentClipAmmo > 0)
+                {
+                    currentAmmo = startAmmo;
+                    currentClipAmmo -= startAmmo;
+                    currentAmmoText.text = currentAmmo.ToString();
+                    clipAmmoText.text = currentClipAmmo.ToString();
+                }
+                else if (currentAmmo > startAmmo && currentClipAmmo > 0)
+                {
+                    currentAmmo = startAmmo;
+                    currentClipAmmo -= startAmmo;
+                    currentAmmoText.text = currentAmmo.ToString();
+                    clipAmmoText.text = currentClipAmmo.ToString();
+                }
+            }
+            else
+            {
+                if (currentAmmo <= 0 && currentClipAmmo > 0)
+                {
+                    currentAmmo = currentClipAmmo;
+                    currentClipAmmo = 0;
+                    currentAmmoText.text = currentAmmo.ToString();
+                    clipAmmoText.text = currentClipAmmo.ToString();
+                }
+                else if (currentAmmo > startAmmo && currentClipAmmo > 0)
+                {
+                    currentAmmo = currentClipAmmo;
+                    currentClipAmmo = 0;
+                    currentAmmoText.text = currentAmmo.ToString();
+                    clipAmmoText.text = currentClipAmmo.ToString();
+                }
             }
         }
     }

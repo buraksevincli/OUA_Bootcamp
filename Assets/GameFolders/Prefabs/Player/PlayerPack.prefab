@@ -387,13 +387,17 @@ MonoBehaviour:
   range: 100
   impactForce: 100
   fireRate: 10
-  maxAmmo: 25
+  startAmmo: 10
   currentAmmo: 0
   availableAmmo: 0
+  startClipAmmo: 30
+  currentClipAmmo: 0
+  availableClipAmmo: 0
   impactEffectWithHole: {fileID: 100006, guid: 94a130fb17f1cae4388a8fe1d8bd3055, type: 3}
   impactEffect: {fileID: 100002, guid: 99c73c92ac40473459640b165473206f, type: 3}
   muzzleEffect: {fileID: 5581540670338976750}
-  text: {fileID: 0}
+  currentAmmoText: {fileID: 0}
+  clipAmmoText: {fileID: 0}
   fpsCam: {fileID: 3307298966171482922}
 --- !u!82 &3048644460430594757
 AudioSource:
@@ -700,13 +704,17 @@ MonoBehaviour:
   range: 100
   impactForce: 100
   fireRate: 15
-  maxAmmo: 50
+  startAmmo: 20
   currentAmmo: 0
   availableAmmo: 0
+  startClipAmmo: 60
+  currentClipAmmo: 0
+  availableClipAmmo: 0
   impactEffectWithHole: {fileID: 100006, guid: 94a130fb17f1cae4388a8fe1d8bd3055, type: 3}
   impactEffect: {fileID: 100002, guid: 99c73c92ac40473459640b165473206f, type: 3}
   muzzleEffect: {fileID: 8525018137856823340}
-  text: {fileID: 0}
+  currentAmmoText: {fileID: 0}
+  clipAmmoText: {fileID: 0}
   fpsCam: {fileID: 3307298966171482922}
 --- !u!82 &405188279
 AudioSource:
@@ -1073,13 +1081,17 @@ MonoBehaviour:
   range: 100
   impactForce: 100
   fireRate: 20
-  maxAmmo: 100
+  startAmmo: 50
   currentAmmo: 0
   availableAmmo: 0
+  startClipAmmo: 100
+  currentClipAmmo: 0
+  availableClipAmmo: 0
   impactEffectWithHole: {fileID: 100006, guid: 94a130fb17f1cae4388a8fe1d8bd3055, type: 3}
   impactEffect: {fileID: 100002, guid: 99c73c92ac40473459640b165473206f, type: 3}
   muzzleEffect: {fileID: 4118659562921408547}
-  text: {fileID: 0}
+  currentAmmoText: {fileID: 0}
+  clipAmmoText: {fileID: 0}
   fpsCam: {fileID: 3307298966171482922}
 --- !u!82 &8636743848876527572
 AudioSource:
