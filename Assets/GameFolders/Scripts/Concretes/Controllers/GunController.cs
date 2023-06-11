@@ -84,6 +84,15 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 _animator.SetBool("isShooting", _isShooting);
                 StartCoroutine(Reload());
             }
+
+            if (Input.GetButtonDown("Fire2"))
+            {
+                fpsCam.usePhysicalProperties = true;
+            }
+            else if (Input.GetButtonUp("Fire2"))
+            {
+                fpsCam.usePhysicalProperties = false;
+            }
         }
 
         private void Shoot()
