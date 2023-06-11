@@ -19,10 +19,16 @@ namespace GameFolders.Scripts.Concretes.Controllers
         [SerializeField] private int availableAmmo;
         
         [SerializeField] private int startClipAmmo;
-        [SerializeField] private int currentClipAmmo;
         [SerializeField] private int availableClipAmmo;
         
-        
+        private int currentClipAmmo = 1;
+        public int CurrentClipAmmo
+        {
+            get => currentClipAmmo;
+            set => currentClipAmmo = value;
+        }
+
+
         [SerializeField] private GameObject impactEffectWithHole;
         [SerializeField] private GameObject impactEffect;
         [SerializeField] private ParticleSystem muzzleEffect;
@@ -72,11 +78,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             _animator.SetBool("isShooting", _isShooting);
             
+            SetTextBullets();
+            
             if (currentClipAmmo == 0 && currentAmmo == 0)
             {
                 _isShooting = false;
-                currentAmmoText.text = currentAmmo.ToString();
-                clipAmmoText.text = currentClipAmmo.ToString();
                 _audioSource.Stop();
                 muzzleEffect.Stop();
             }
@@ -133,7 +139,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
             if (currentAmmo > 0 && _isShooting)
             {
                 currentAmmo--;
-                currentAmmoText.text = currentAmmo.ToString();
                 _audioSource.Play();
                 _animator.SetBool("isShooting", _isShooting);
             }
@@ -143,6 +148,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             }
 
             RaycastHit hit;
+            
             if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
             {
                 if (hit.transform.TryGetComponent(out TargetController target))
@@ -230,8 +236,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
                     currentClipAmmo -= (startAmmo - currentAmmo);
                     currentAmmo = startAmmo;
                 }
-                currentAmmoText.text = currentAmmo.ToString();
-                clipAmmoText.text = currentClipAmmo.ToString();
             }
             else
             {
@@ -258,9 +262,13 @@ namespace GameFolders.Scripts.Concretes.Controllers
                         currentClipAmmo = 0;
                     }
                 }
-                currentAmmoText.text = currentAmmo.ToString();
-                clipAmmoText.text = currentClipAmmo.ToString();
             }
+        }
+
+        private void SetTextBullets()
+        {
+            currentAmmoText.text = currentAmmo.ToString();
+            clipAmmoText.text = currentClipAmmo.ToString();
         }
     }
 }

@@ -1,4 +1,6 @@
 using System;
+using GameFolders.Scripts.Concretes.Managers;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Controllers
@@ -13,28 +15,59 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         [SerializeField] private int ammo;
 
+        private GunController _gunController;
+
         private void OnTriggerEnter(Collider other)
         {
-            switch (weaponType)
+            if (other.gameObject.CompareTag("Player"))
             {
-                case WeaponType.HeavyGun:
-                    if (heavyGun.activeSelf)
-                    {
-                        // işlemler yapılacak.
-                    }
-                    break;
-                case WeaponType.Rifle:
-                    if (rifle.activeSelf)
-                    {
-                        //
-                    }
-                    break;
-                case WeaponType.MiniGun:
-                    if (miniGun.activeSelf)
-                    {
-                        //
-                    }
-                    break;
+                if (heavyGun.activeSelf)
+                {
+                    _gunController = heavyGun.GetComponent<GunController>();
+                }
+                else if (rifle.activeSelf)
+                {
+                    _gunController = rifle.GetComponent<GunController>();
+                }
+                else if (miniGun.activeSelf)
+                {
+                    _gunController = miniGun.GetComponent<GunController>();
+                }
+                
+                switch (weaponType)
+                {
+                    case WeaponType.HeavyGun:
+                        if (heavyGun.activeSelf)
+                        {
+                            _gunController.CurrentClipAmmo += ammo;
+                        }
+                        else
+                        {
+                            GameManager.Instance.HeavyGunAmmo += ammo;
+                        }
+                        break;
+                    case WeaponType.Rifle:
+                        if (rifle.activeSelf)
+                        {
+                            _gunController.CurrentClipAmmo += ammo;
+                        }
+                        else
+                        {
+                            GameManager.Instance.RifleAmmo += ammo;
+                        }
+                        break;
+                    case WeaponType.MiniGun:
+                        if (miniGun.activeSelf)
+                        {
+                            _gunController.CurrentClipAmmo += ammo;
+                        }
+                        else
+                        {
+                            GameManager.Instance.MiniGunAmmo += ammo;
+                        }
+                        break;
+                }
+                Destroy(this.gameObject);
             }
         }
     }

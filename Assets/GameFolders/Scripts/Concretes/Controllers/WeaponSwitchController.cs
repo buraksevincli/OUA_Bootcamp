@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using GameFolders.Scripts.Concretes.Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,18 +27,29 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                StartCoroutine(HeavyGunSelected());
+                HeavyGunSelect();
             }
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                StartCoroutine(RifleSelected());
+                RifleSelect();
             }
             else if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                StartCoroutine(MiniGunSelected());
+                MiniGunSelect();
             }
         }
 
+        private void HeavyGunSelect()
+        {
+            StartCoroutine(HeavyGunSelected());
+
+            heavyGun.TryGetComponent(out GunController gunController);
+            
+            gunController.CurrentClipAmmo += GameManager.Instance.HeavyGunAmmo;
+
+            GameManager.Instance.HeavyGunAmmo = 0;
+
+        }
         private IEnumerator HeavyGunSelected()
         {
             heavyGun.SetActive(true);
@@ -51,6 +63,17 @@ namespace GameFolders.Scripts.Concretes.Controllers
             heavyGunImage.SetActive(false);
         }
 
+        private void RifleSelect()
+        {
+            StartCoroutine(RifleSelected());
+            
+            rifle.TryGetComponent(out GunController gunController);
+            
+            gunController.CurrentClipAmmo += GameManager.Instance.RifleAmmo;
+
+            GameManager.Instance.RifleAmmo = 0;
+        }
+
         private IEnumerator RifleSelected()
         {
             heavyGun.SetActive(false);
@@ -62,6 +85,17 @@ namespace GameFolders.Scripts.Concretes.Controllers
             yield return _wait;
 
             rifleImage.SetActive(false);
+        }
+
+        private void MiniGunSelect()
+        {
+            StartCoroutine(MiniGunSelected());
+            
+            miniGun.TryGetComponent(out GunController gunController);
+            
+            gunController.CurrentClipAmmo += GameManager.Instance.MiniGunAmmo;
+
+            GameManager.Instance.MiniGunAmmo = 0;
         }
 
         private IEnumerator MiniGunSelected()

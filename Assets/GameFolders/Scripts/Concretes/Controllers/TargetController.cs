@@ -20,6 +20,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private void Die()
         {
             Instantiate(explodeEffect, transform.position, transform.rotation);
+
             Destroy(this.gameObject);
         }
     }
