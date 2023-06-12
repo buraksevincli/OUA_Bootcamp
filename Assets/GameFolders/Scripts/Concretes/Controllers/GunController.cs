@@ -15,12 +15,12 @@ namespace GameFolders.Scripts.Concretes.Controllers
         
         
         [SerializeField] private int startAmmo;
-        [SerializeField] private int currentAmmo;
-        [SerializeField] private int availableAmmo;
-        
         [SerializeField] private int startClipAmmo;
-        [SerializeField] private int availableClipAmmo;
         
+        private int availableAmmo;
+        private int availableClipAmmo;
+        
+        private int currentAmmo = 1;
         private int currentClipAmmo = 1;
         public int CurrentClipAmmo
         {
@@ -97,7 +97,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 StartReloading();
             }
 
-            if (Input.GetKeyDown(KeyCode.R) && currentClipAmmo > 0)
+            if (Input.GetKeyDown(KeyCode.R) && currentClipAmmo > 0 && currentAmmo < startAmmo)
             {
                 _isShooting = false;
 
