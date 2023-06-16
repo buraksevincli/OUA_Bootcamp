@@ -29378,6 +29378,8 @@ MonoBehaviour:
   currentAmmoText: {fileID: 0}
   clipAmmoText: {fileID: 0}
   fpsCam: {fileID: 7443854537136458407}
+  audioClips:
+  - {fileID: 8300000, guid: 33c5f17ebcabb3342a8217576eb3aeb0, type: 3}
 --- !u!82 &6982538047090172744
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29533,6 +29535,8 @@ MonoBehaviour:
   currentAmmoText: {fileID: 0}
   clipAmmoText: {fileID: 0}
   fpsCam: {fileID: 7443854537136458407}
+  audioClips:
+  - {fileID: 8300000, guid: 33c5f17ebcabb3342a8217576eb3aeb0, type: 3}
 --- !u!82 &5379550442915012410
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29906,6 +29910,8 @@ MonoBehaviour:
   currentAmmoText: {fileID: 0}
   clipAmmoText: {fileID: 0}
   fpsCam: {fileID: 7443854537136458407}
+  audioClips:
+  - {fileID: 8300000, guid: 33c5f17ebcabb3342a8217576eb3aeb0, type: 3}
 --- !u!82 &4428129584127114841
 AudioSource:
   m_ObjectHideFlags: 0

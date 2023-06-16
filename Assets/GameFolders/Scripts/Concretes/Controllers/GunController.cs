@@ -37,6 +37,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         [SerializeField] private TMP_Text clipAmmoText;
 
         [SerializeField] private Camera fpsCam;
+        [SerializeField] private AudioClip[] audioClips;
 
         private Animator _animator;
         private AudioSource _audioSource;
@@ -134,11 +135,16 @@ namespace GameFolders.Scripts.Concretes.Controllers
             }
         }
 
+        
+
+        #region ShootControllers
+
         private void Shoot()
         {
             if (currentAmmo > 0 && _isShooting)
             {
                 currentAmmo--;
+                _audioSource.clip = audioClips[0];
                 _audioSource.Play();
                 _animator.SetBool("isShooting", _isShooting);
             }
@@ -168,6 +174,10 @@ namespace GameFolders.Scripts.Concretes.Controllers
             }
         }
 
+        #endregion
+
+        #region ReloadControllers
+
         private IEnumerator Reload()
         {
             _isReloading = true;
@@ -188,6 +198,10 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 StartCoroutine(Reload());
             }
         }
+
+        #endregion
+
+        #region AmmoControllers
 
         private void SetCurrentAmmo()
         {
@@ -270,5 +284,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
             currentAmmoText.text = currentAmmo.ToString();
             clipAmmoText.text = currentClipAmmo.ToString();
         }
+
+        #endregion
+        
     }
 }
