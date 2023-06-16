@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
+  m_Script: {fileID: 0}
   m_Name: PlayFabEditorPrefsSO
-  m_EditorClassIdentifier: 
-  DevAccountEmail: brksvncli@gmail.com
-  DevAccountToken: acs7uhykfpke6znw6o3e6pwhijd9kxp17yjwshccpofhujnti5w3o66cg9hkjey9mo3151gnkoregp3o767tfc5xzj41bnyiohpafkudu6r89mpng17rymoj4osndw46stdu4or46hj5qg8e46ko8ixekwhcx7jwi1d8z91m854xhyxpi3ax98se78s6dr5fqmm9iy6z
-  SelectedStudio: My Game Studio
-  SdkPath: Assets/PlayFabSDK
+  m_EditorClassIdentifier: PlayFabEditorExtensions:PlayFab.PfEditor:PlayFabEditorPrefsSO
+  DevAccountEmail: 
+  DevAccountToken: 
+  SelectedStudio: 
+  SdkPath: 
   EdExPath: 
   LocalCloudScriptPath: 
   PanelIsShown: 0
-  curMainMenuIdx: 1
+  curMainMenuIdx: 0
   curSubMenuIdx: 0
