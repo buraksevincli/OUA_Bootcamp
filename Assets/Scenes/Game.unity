@@ -384,6 +384,10 @@ PrefabInstance:
       propertyPath: currentAmmoText
       value: 
       objectReference: {fileID: 2107396944}
+    - target: {fileID: 3307298966171482925, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.375
+      objectReference: {fileID: 0}
     - target: {fileID: 3475752088504788290, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
       propertyPath: m_RootOrder
       value: 3

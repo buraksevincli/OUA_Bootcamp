@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -20,6 +21,11 @@ namespace StarterAssets
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
 
+		private void Start()
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		
 #if ENABLE_INPUT_SYSTEM
 		public void OnMove(InputValue value)
 		{

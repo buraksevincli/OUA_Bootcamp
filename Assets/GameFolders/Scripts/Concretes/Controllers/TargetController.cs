@@ -1,3 +1,4 @@
+using GameFolders.Scripts.Concretes.Managers;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Controllers
@@ -20,6 +21,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private void Die()
         {
             Instantiate(explodeEffect, transform.position, transform.rotation);
+
+            GameManager.Instance.Score++;
 
             Destroy(this.gameObject);
         }

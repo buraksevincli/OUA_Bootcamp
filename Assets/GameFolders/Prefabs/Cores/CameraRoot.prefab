@@ -50,9 +50,9 @@ MonoBehaviour:
   heavyGun: {fileID: 2275428724520016817}
   rifle: {fileID: 3846011697624285403}
   miniGun: {fileID: 3109513040445177601}
-  heavyGunImage: {fileID: 0}
-  rifleImage: {fileID: 0}
-  miniGunImage: {fileID: 0}
+  heavyGunImage: {fileID: 7768146935112901321, guid: 9c97a3ec3934e5d44b5dc1d530eabcbf, type: 3}
+  rifleImage: {fileID: 8566258256439010173, guid: ecbef7f6f0300c64bb4361f7cd39aad9, type: 3}
+  miniGunImage: {fileID: 5956649536628617535, guid: 5a0e73e5a5837ea4394ae862edb5c86e, type: 3}
 --- !u!1001 &5596420869863821931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -104,10 +104,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.02
       objectReference: {fileID: 0}
-    - target: {fileID: 8442422194570801495, guid: 13672af1297d8df47a4e89957056dfc1, type: 3}
-      propertyPath: fpsCam
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8716079784132891312, guid: 13672af1297d8df47a4e89957056dfc1, type: 3}
       propertyPath: m_Name
       value: Rifle
@@ -131,10 +127,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5434281147412141019}
     m_Modifications:
-    - target: {fileID: 4380802901833413490, guid: 348614a9e41617940b6d13cef3e1ef0f, type: 3}
-      propertyPath: fpsCam
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5354075668728099332, guid: 348614a9e41617940b6d13cef3e1ef0f, type: 3}
       propertyPath: m_Name
       value: HeavyGun
@@ -202,10 +194,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5434281147412141019}
     m_Modifications:
-    - target: {fileID: 147690683384953788, guid: dca9ef47f4bef2f43bb7c4ee0b7d8c71, type: 3}
-      propertyPath: fpsCam
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6398693774604383208, guid: dca9ef47f4bef2f43bb7c4ee0b7d8c71, type: 3}
       propertyPath: m_Name
       value: MiniGun

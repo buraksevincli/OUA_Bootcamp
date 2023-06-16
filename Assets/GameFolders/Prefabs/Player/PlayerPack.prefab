@@ -91,6 +91,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bfb01efe050ec143bdb092ddeb624d6, type: 3}
+--- !u!1 &3307298966171482920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7292580796013583123, guid: 4bfb01efe050ec143bdb092ddeb624d6, type: 3}
+  m_PrefabInstance: {fileID: 5247135001259237435}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &404303811843538538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3307298966171482920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23ccd175d77bdf40a620f5cabf39c05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageText: {fileID: 0}
+  emailInput: {fileID: 0}
+  passwordInput: {fileID: 0}
+  nameInput: {fileID: 0}
+  namePanel: {fileID: 0}
+  loginPanel: {fileID: 0}
 --- !u!20 &3307298966171482922 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 7292580796013583121, guid: 4bfb01efe050ec143bdb092ddeb624d6, type: 3}
@@ -238,6 +261,18 @@ PrefabInstance:
       propertyPath: fpsCam
       value: 
       objectReference: {fileID: 3307298966171482922}
+    - target: {fileID: 5810482558140890165, guid: 9badd1de95a9b644a9472376207bb99e, type: 3}
+      propertyPath: rifleImage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810482558140890165, guid: 9badd1de95a9b644a9472376207bb99e, type: 3}
+      propertyPath: miniGunImage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810482558140890165, guid: 9badd1de95a9b644a9472376207bb99e, type: 3}
+      propertyPath: heavyGunImage
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9badd1de95a9b644a9472376207bb99e, type: 3}
 --- !u!4 &2485777833356295030 stripped
