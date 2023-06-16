@@ -18,6 +18,8 @@ namespace GameFolders.Scripts.Concretes.PlayFab
         [SerializeField] private GameObject namePanel;
         [SerializeField] private GameObject loginPanel;
 
+        private string _displayName;
+
         private void OnEnable()
         {
             DataManager.Instance.EventData.GameOver += HandleGameOver;
@@ -124,10 +126,36 @@ namespace GameFolders.Scripts.Concretes.PlayFab
 
         private void OnDisplayNameUpdate(UpdateUserTitleDisplayNameResult obj)
         {
-            Debug.Log("Display name Updated!");
             GameManager.Instance.LoadGameScene("Game");
         }
         
+        private void GetDisplayName()
+        {
+            GetAccountInfoRequest request = new GetAccountInfoRequest();
+
+            PlayFabClientAPI.GetAccountInfo(request, OnGetAccountInfoSuccess, OnGetAccountInfoFailure);
+        }
+
+        private void OnGetAccountInfoFailure(PlayFabError obj)
+        {
+            messageText.text = "Account information could not be retrieved!";
+        }
+
+        private void OnGetAccountInfoSuccess(GetAccountInfoResult obj)
+        {
+            _displayName = obj.AccountInfo.TitleInfo.DisplayName;
+            if (string.IsNullOrEmpty(_displayName))
+            {
+                loginPanel.SetActive(false);
+                namePanel.SetActive(true);
+                messageText.text = " ";
+            }
+            else
+            {
+                messageText.text = "Logged in!!";
+                GameManager.Instance.LoadGameScene("Game");
+            }
+        }
         public void LoginButton()
         {
             var request = new LoginWithEmailAddressRequest
@@ -145,8 +173,7 @@ namespace GameFolders.Scripts.Concretes.PlayFab
 
         private void OnLoginSuccess(LoginResult result)
         {
-            messageText.text = "Logged in!";
-            GameManager.Instance.LoadGameScene("Game");
+            GetDisplayName();
         }
     }
 }
