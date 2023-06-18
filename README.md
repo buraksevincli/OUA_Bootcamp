@@ -1,7 +1,7 @@
 # OUA_Bootcamp
 Oyun ve Uygulama Akademisi
 - Takım ismi :ByteBusters
-- Takım Unity U- 165
+- Takım Unity : U- 165
 
 ## Ürün İle İlgili Bilgiler
 
@@ -20,15 +20,15 @@ Oyun ve Uygulama Akademisi
 Unity Team U-165 Trello Backlog
 https://trello.com/invite/b/3vMQHQzd/ATTIf871867c101946d585112e989bd767ac0AE66F1A/sprint-1
 
-Ürün Açıklaması
+**Ürün Açıklaması**:
 Heyecan verici bir FPS deneyimi sunan bir oyundur. Oyun, kurgusal bir atmosferde geçen bir senaryoya dayanmaktadır ve oyunculara birinci şahıs bakış açısıyla hayatta kalma mücadelesi sunmaktadır.
 Oyunda, oyuncular spawnlanan yaratıklarla mücadele etmek zorundadır.Haritada karşılaşacakları tehlikeli düşmanlarla savaşırken, hünerlerini ve reflekslerini kullanarak hayatta kalmaya çalışacaklardır. Oyuncular, düşmanları etkisiz hale getirerek skorlarını artırırken, diğer oyuncularla da score board üzerinde rekabet içerisinde olacaklardır.
 
-Ürün Özellikleri
-3D
-FPS
-Survival
-Score Board :Skorlar, oyuncular arasında karşılaştırılabilir.
+**Ürün Özellikleri**:
+- 3D
+- FPS
+- Survival
+- Score Board :Skorlar, oyuncular arasında karşılaştırılabilir.
 
 ## Hedef Kitle
 - Bu oyunun hedef kitlesi, FPS oyunlarını seven ve hayatta kalma mekaniğine ilgi duyan oyunculardır. Aksiyon dolu oyun deneyimi arayan, stratejik kararlar almayı seven ve rekabetçi bir atmosferde diğer oyuncularla skorlarını karşılaştırmak isteyen oyuncular bu oyunun hedef kitlesini oluşturur. Ayrıca, gerçekçi grafikler ve atmosferden etkilenen oyuncular da oyunun hedef kitlesine dahil olabilir.
@@ -62,7 +62,8 @@ Alınan kararlar:
  - Oluşan sorunlar ve engeller tanımlandı. Bu sorunların çözümü için ekip içinde iş birliği yapılacak ve çözüm yolları belirlenecek.
  - İletişim ve işbirliği süreçleri gözden geçirildi ve iyileştirmeler yapılması için adımlar atıldı.
  - Ekip üyelerinin sorumlulukları ve rolleri gözden geçirildi. Gerekli durumlarda rol değişiklikleri veya yeni sorumluluklar belirlenecek.
- **Sprint Review katılımcıları**: Hasan Mücahit Aktaş,Burak Sevinçli,Kerim Kahramaner,Yağmur Mine Saygılı,Hüseyin Özgün
+ **Sprint Review katılımcıları**: 
+ Hasan Mücahit Aktaş,Burak Sevinçli,Kerim Kahramaner,Yağmur Mine Saygılı,Hüseyin Özgün
 
 **Sprint Retrospective**:
 Retrospective toplantısında alınan kararlar arasında iletişimin düzeltilmesi ve takım çalışmasının geliştirilmesi için aşağıda belirtildi:
