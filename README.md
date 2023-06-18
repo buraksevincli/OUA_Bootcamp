@@ -1,6 +1,5 @@
 # OUA_Bootcamp
 Oyun ve Uygulama Akademisi
-- Bootcamp Ekibi U-165
 - Takım ismi :ByteBusters
 - Takım Unity U- 165
 
