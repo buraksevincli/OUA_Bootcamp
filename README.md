@@ -16,11 +16,11 @@ Oyun ve Uygulama Akademisi
 ## Ürün İsmi
 ----
 
-**Product Backlog URL**:
+## Product Backlog URL**:
 Unity Team U-165 Trello Backlog
 https://trello.com/invite/b/3vMQHQzd/ATTIf871867c101946d585112e989bd767ac0AE66F1A/sprint-1
 
-**Ürün Açıklaması**:
+## Ürün Açıklaması 
 Heyecan verici bir FPS deneyimi sunan bir oyundur. Oyun, kurgusal bir atmosferde geçen bir senaryoya dayanmaktadır ve oyunculara birinci şahıs bakış açısıyla hayatta kalma mücadelesi sunmaktadır.
 Oyunda, oyuncular spawnlanan yaratıklarla mücadele etmek zorundadır.Haritada karşılaşacakları tehlikeli düşmanlarla savaşırken, hünerlerini ve reflekslerini kullanarak hayatta kalmaya çalışacaklardır. Oyuncular, düşmanları etkisiz hale getirerek skorlarını artırırken, diğer oyuncularla da score board üzerinde rekabet içerisinde olacaklardır.
 
@@ -67,6 +67,6 @@ Alınan kararlar:
 
 **Sprint Retrospective**:
 Retrospective toplantısında alınan kararlar arasında iletişimin düzeltilmesi ve takım çalışmasının geliştirilmesi için aşağıda belirtildi:
--Daha sık bir araya gelme geliştirilecek : Ekip, düzenli olarak toplantılar düzenleyerek takım içi iletişimi ve işbirliğini güçlendirecektir. Bu toplantılarda projelerin durumu, sorunlar, fikir alışverişi ve geribildirim paylaşımı gibi konular ele alınacaktır.
--İşbirliği ve paylaşım kültürünün teşvik edilmesinin arttırılması: Ekip üyeleri, birbirleriyle daha fazla işbirliği yapmayı teşvik etmek için daha çok çaba sarf edilecektir.
+- Daha sık bir araya gelme geliştirilecek : Ekip, düzenli olarak toplantılar düzenleyerek takım içi iletişimi ve işbirliğini güçlendirecektir. Bu toplantılarda projelerin durumu, sorunlar, fikir alışverişi ve geribildirim paylaşımı gibi konular ele alınacaktır.
+- İşbirliği ve paylaşım kültürünün teşvik edilmesinin arttırılması: Ekip üyeleri, birbirleriyle daha fazla işbirliği yapmayı teşvik etmek için daha çok çaba sarf edilecektir.
 
