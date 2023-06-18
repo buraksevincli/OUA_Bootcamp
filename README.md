@@ -40,9 +40,11 @@ Score Board :Skorlar, oyuncular arasında karşılaştırılabilir.
 
 - **Puan tamamlama mantığı**:Proje boyunca tamamlanması gereken toplam backlog puanını 300 olarak belirlendi. Sprintleri üçe bölmeye karar verildiğinde, ilk sprintin 100 puandan başlaması gerektiği kararlaştırıldı.
 
-- **Daily Scrum**: Daily Scrum toplantıları, zaman sınırlılıkları nedeniyle günlük Whatsapp üzerinden konuşmalarla gerçekleştirilme kararı alındı  Bunun yanında Discord üzerinden üç günde bir toplanılıp süreç değerlendirilip ne yapılacağı hakkında konuşulmaktadır. Örnek bir Daily Scrum toplantısı dosyası, Readme dosyasında tarafımca paylaşılmıştır. : Sprint 1 Daily Scrum Chats
+- **Daily Scrum**: Daily Scrum toplantıları, zaman sınırlılıkları nedeniyle günlük Whatsapp üzerinden konuşmalarla gerçekleştirilme kararı alındı  Bunun yanında Discord üzerinden üç günde bir toplanılıp süreç değerlendirilip ne yapılacağı hakkında konuşulmaktadır. Örnek bir Daily Scrum toplantısı dosyası, Readme dosyasında tarafımca paylaşılmıştır. : 
+- **Sprint 1 Daily Scrum Chats**:
+https://1drv.ms/w/s!Aq-ZFEb-npHaglLdi3h0koCsVaC-?e=81L1vd
 
-Sprint board update: Sprint board screenshotları: Backlog 1
+**Sprint board update: Sprint board screenshotları**: Backlog 1
 ![image](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/93bb3a85-de72-4210-907a-0d8619c26db4)
 
 
@@ -52,6 +54,7 @@ Sprint board update: Sprint board screenshotları: Backlog 1
 ![WhatsApp Görsel 2023-06-11 saat 18 37 54](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/3cd4dae8-3536-4cf8-b7b6-cbde166c12a2)
 ![WhatsApp Görsel 2023-06-18 saat 20 57 23](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/dc6619cd-7782-4beb-b081-cda555a661c8)
 ![image](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/59a12a77-0005-4782-ac30-8bc87a14231b)
+![image](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/c441b882-3cff-4667-8605-71b30aa27f8f)
 
 
 **Sprint Review**:
@@ -67,36 +70,3 @@ Retrospective toplantısında alınan kararlar arasında iletişimin düzeltilme
 -Daha sık bir araya gelme geliştirilecek : Ekip, düzenli olarak toplantılar düzenleyerek takım içi iletişimi ve işbirliğini güçlendirecektir. Bu toplantılarda projelerin durumu, sorunlar, fikir alışverişi ve geribildirim paylaşımı gibi konular ele alınacaktır.
 -İşbirliği ve paylaşım kültürünün teşvik edilmesinin arttırılması: Ekip üyeleri, birbirleriyle daha fazla işbirliği yapmayı teşvik etmek için daha çok çaba sarf edilecektir.
 
-
-
-Sprint 2
-Sprint içinde tamamlanması tahmin edilen puan: 120 Puan
-
-Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: Sprint 2 Daily Scrum Chats
-
-Sprint board update: Sprint board screenshotları: Backlog 1
-
-Ürün Durumu: Ekran görüntüleri: Screenshot 1 Screenshot 2 Screenshot 3
-
-Sprint Review: Alınan kararlar: Kullanıcı temel sayfaların arayüzleri, algoritmaları kodlanmış, firebase servislerine bağlantıları yapılmış ve eksiklikleri değerlendirilmiştir. Sprint Review katılımcıları: Mustafa Aksoy, Yunus Emre Gürel, Sümeyye Aydoğan
-
-Sprint Retrospective:
-
-Takım üyelerinin gelecek sprintlerde daha fazla aktif olması gerektiğine vurgu yapılmıştır.
-Product Backlog URL
-Flutter Team 52 Miro Backlog Board
-
-Sprint 3
-Sprint içinde tamamlanması tahmin edilen puan: İkinci sprintten kalan 120 puanın da eklenmesiyle bu sprint için toplam puan: 240'tır.
-
-Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: Sprint 3 Daily Scrum Chats
-
-Sprint board update: Sprint board screenshotları: Backlog 1
-
-Ürün Durumu: Ekran görüntüleri: Screenshot 1 Screenshot 2 Screenshot 3
-
-Sprint Review: Alınan kararlar: Kullanıcı temel sayfaların arayüzleri, algoritmaları kodlanmış, firebase servislerine bağlantıları yapılmış ve tamamlanamayan sayfa, algoritma ve servis bağlantıları değerlendirilmiştir. Sprint Review katılımcıları: Mustafa Aksoy, Yunus Emre Gürel, Sümeyye Aydoğan
-
-Sprint Retrospective:
-
-Takım üyelerinin gelecek projelerde daha fazla aktif olması gerektiğine vurgu yapılmıştır.
