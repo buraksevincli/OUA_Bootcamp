@@ -46,7 +46,8 @@ Sprint board update: Sprint board screenshotları: Backlog 1
 ![image](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/93bb3a85-de72-4210-907a-0d8619c26db4)
 
 
-Ürün Durumu: Ekran görüntüleri: Screenshot 1 Screenshot 2 Screenshot 3
+-**Ürün Durumu**: Ekran görüntüleri:)
+
 
 Sprint Review: Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış, arduino kurulumu ve firebase'e bağlanması sağlanmış, uygulama için veritabanı olarak firebase servisleri aktif edilmiş ve eksiklikler değerlendirilmiştir. Sprint Review katılımcıları: Mustafa Aksoy
 
