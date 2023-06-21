@@ -1,6 +1,4 @@
-using System;
 using GameFolders.Scripts.Concretes.Managers;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Controllers
@@ -10,8 +8,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         [SerializeField] private WeaponType weaponType;
 
         [SerializeField] private GameObject heavyGun;
-        [SerializeField] private GameObject rifle;
-        [SerializeField] private GameObject miniGun;
+        [SerializeField] private GameObject pistol;
 
         [SerializeField] private int ammo;
 
@@ -25,13 +22,9 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 {
                     _gunController = heavyGun.GetComponent<GunController>();
                 }
-                else if (rifle.activeSelf)
+                else if (pistol.activeSelf)
                 {
-                    _gunController = rifle.GetComponent<GunController>();
-                }
-                else if (miniGun.activeSelf)
-                {
-                    _gunController = miniGun.GetComponent<GunController>();
+                    _gunController = pistol.GetComponent<GunController>();
                 }
                 
                 switch (weaponType)
@@ -46,24 +39,14 @@ namespace GameFolders.Scripts.Concretes.Controllers
                             GameManager.Instance.HeavyGunAmmo += ammo;
                         }
                         break;
-                    case WeaponType.Rifle:
-                        if (rifle.activeSelf)
+                    case WeaponType.Pistol:
+                        if (pistol.activeSelf)
                         {
                             _gunController.CurrentClipAmmo += ammo;
                         }
                         else
                         {
-                            GameManager.Instance.RifleAmmo += ammo;
-                        }
-                        break;
-                    case WeaponType.MiniGun:
-                        if (miniGun.activeSelf)
-                        {
-                            _gunController.CurrentClipAmmo += ammo;
-                        }
-                        else
-                        {
-                            GameManager.Instance.MiniGunAmmo += ammo;
+                            GameManager.Instance.PistolAmmo += ammo;
                         }
                         break;
                 }
@@ -75,7 +58,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
     public enum WeaponType
     {
         HeavyGun,
-        Rifle,
-        MiniGun
+        Pistol
     }
 }

@@ -1,20 +1,18 @@
-using System;
 using System.Collections;
 using GameFolders.Scripts.Concretes.Managers;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace GameFolders.Scripts.Concretes.Controllers
 {
     public class WeaponSwitchController : MonoBehaviour
     {
         [SerializeField] private GameObject heavyGun;
-        [SerializeField] private GameObject rifle;
-        [SerializeField] private GameObject miniGun;
+        [SerializeField] private GameObject pistol;
+        [SerializeField] private GameObject sword;
 
         [SerializeField] private GameObject heavyGunImage;
-        [SerializeField] private GameObject rifleImage;
-        [SerializeField] private GameObject miniGunImage;
+        [SerializeField] private GameObject pistolImage;
+        [SerializeField] private GameObject swordImage;
 
         private WaitForSeconds _wait;
 
@@ -31,11 +29,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
             }
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                RifleSelect();
+                PistolSelect();
             }
             else if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                MiniGunSelect();
+                SwordSelect();
             }
         }
 
@@ -53,8 +51,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private IEnumerator HeavyGunSelected()
         {
             heavyGun.SetActive(true);
-            rifle.SetActive(false);
-            miniGun.SetActive(false);
+            sword.SetActive(false);
+            pistol.SetActive(false);
 
             heavyGunImage.SetActive(true);
 
@@ -62,53 +60,49 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
             heavyGunImage.SetActive(false);
         }
-
-        private void RifleSelect()
+        
+        private void PistolSelect()
         {
-            StartCoroutine(RifleSelected());
+            StartCoroutine(PistolSelected());
             
-            rifle.TryGetComponent(out GunController gunController);
+            pistol.TryGetComponent(out GunController gunController);
             
-            gunController.CurrentClipAmmo += GameManager.Instance.RifleAmmo;
+            gunController.CurrentClipAmmo += GameManager.Instance.PistolAmmo;
 
-            GameManager.Instance.RifleAmmo = 0;
+            GameManager.Instance.PistolAmmo = 0;
         }
 
-        private IEnumerator RifleSelected()
+        private IEnumerator PistolSelected()
         {
             heavyGun.SetActive(false);
-            rifle.SetActive(true);
-            miniGun.SetActive(false);
+            sword.SetActive(false);
+            pistol.SetActive(true);
             
-            rifleImage.SetActive(true);
+            pistolImage.SetActive(true);
 
             yield return _wait;
 
-            rifleImage.SetActive(false);
+            pistolImage.SetActive(false);
         }
 
-        private void MiniGunSelect()
+        private void SwordSelect()
         {
-            StartCoroutine(MiniGunSelected());
-            
-            miniGun.TryGetComponent(out GunController gunController);
-            
-            gunController.CurrentClipAmmo += GameManager.Instance.MiniGunAmmo;
-
-            GameManager.Instance.MiniGunAmmo = 0;
+            StartCoroutine(SwordSelected());
         }
 
-        private IEnumerator MiniGunSelected()
+        private IEnumerator SwordSelected()
         {
             heavyGun.SetActive(false);
-            rifle.SetActive(false);
-            miniGun.SetActive(true);
+            sword.SetActive(true);
+            pistol.SetActive(false);
             
-            miniGunImage.SetActive(true);
+            swordImage.SetActive(true);
 
             yield return _wait;
 
-            miniGunImage.SetActive(false);
+            swordImage.SetActive(false);
         }
+
+        
     }
 }

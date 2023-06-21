@@ -1,8 +1,6 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using TMPro;
-using UnityEngine.Serialization;
 
 namespace GameFolders.Scripts.Concretes.Controllers
 {
@@ -40,7 +38,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         [SerializeField] private AudioClip[] audioClips;
 
         private Animator _animator;
-        private AudioSource _audioSource;
+        //private AudioSource _audioSource;
         private WaitForSeconds _reloadTime;
         private Coroutine _reloadCoroutine;
         
@@ -51,8 +49,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Awake()
         {
-            _animator = transform.GetChild(0).GetComponent<Animator>();
-            _audioSource = GetComponent<AudioSource>();
+            _animator = GetComponent<Animator>();
+            //_audioSource = GetComponent<AudioSource>();
 
             _reloadTime = new WaitForSeconds(3f);
         }
@@ -84,7 +82,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             if (currentClipAmmo == 0 && currentAmmo == 0)
             {
                 _isShooting = false;
-                _audioSource.Stop();
+                //_audioSource.Stop();
                 muzzleEffect.Stop();
             }
 
@@ -92,7 +90,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             {
                 _isShooting = false;
 
-                _audioSource.Stop();
+                //_audioSource.Stop();
                 muzzleEffect.Stop();
 
                 StartReloading();
@@ -102,7 +100,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             {
                 _isShooting = false;
 
-                _audioSource.Stop();
+                //_audioSource.Stop();
                 muzzleEffect.Stop();
 
                 StartReloading();
@@ -121,7 +119,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             else if (Input.GetButtonUp("Fire1"))
             {
                 _isShooting = false;
-                _audioSource.Stop();
+                //_audioSource.Stop();
                 muzzleEffect.Stop();
             }
             
@@ -144,8 +142,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
             if (currentAmmo > 0 && _isShooting)
             {
                 currentAmmo--;
-                _audioSource.clip = audioClips[0];
-                _audioSource.Play();
+                //_audioSource.clip = audioClips[0];
+                //_audioSource.Play();
                 _animator.SetBool("isShooting", _isShooting);
             }
             else
