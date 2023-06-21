@@ -15,15 +15,15 @@ namespace GameFolders.Scripts.Concretes.Controllers
         [SerializeField] private int startAmmo;
         [SerializeField] private int startClipAmmo;
         
-        private int availableAmmo;
-        private int availableClipAmmo;
+        private int _availableAmmo;
+        private int _availableClipAmmo;
         
-        private int currentAmmo = 1;
-        private int currentClipAmmo = 1;
+        private int _currentAmmo = 1;
+        private int _currentClipAmmo = 1;
         public int CurrentClipAmmo
         {
-            get => currentClipAmmo;
-            set => currentClipAmmo = value;
+            get => _currentClipAmmo;
+            set => _currentClipAmmo = value;
         }
 
 
@@ -40,7 +40,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private Animator _animator;
         //private AudioSource _audioSource;
         private WaitForSeconds _reloadTime;
-        private Coroutine _reloadCoroutine;
         
         private bool _isShooting;
         private bool _isReloading;
@@ -60,7 +59,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             SetCurrentAmmo();
             SetCurrentClipAmmo();
 
-            if (currentAmmo == 0 && currentClipAmmo > 0)
+            if (_currentAmmo == 0 && _currentClipAmmo > 0)
             {
                 StartCoroutine(Reload());
             }
@@ -68,9 +67,9 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void OnDisable()
         {
-            availableAmmo = currentAmmo;
+            _availableAmmo = _currentAmmo;
 
-            availableClipAmmo = currentClipAmmo;
+            _availableClipAmmo = _currentClipAmmo;
         }
 
         private void Update()
@@ -79,14 +78,14 @@ namespace GameFolders.Scripts.Concretes.Controllers
             
             SetTextBullets();
             
-            if (currentClipAmmo == 0 && currentAmmo == 0)
+            if (_currentClipAmmo == 0 && _currentAmmo == 0)
             {
                 _isShooting = false;
                 //_audioSource.Stop();
                 muzzleEffect.Stop();
             }
 
-            if (currentAmmo <= 0 && currentClipAmmo > 0)
+            if (_currentAmmo <= 0 && _currentClipAmmo > 0)
             {
                 _isShooting = false;
 
@@ -96,7 +95,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 StartReloading();
             }
 
-            if (Input.GetKeyDown(KeyCode.R) && currentClipAmmo > 0 && currentAmmo < startAmmo)
+            if (Input.GetKeyDown(KeyCode.R) && _currentClipAmmo > 0 && _currentAmmo < startAmmo)
             {
                 _isShooting = false;
 
@@ -106,11 +105,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 StartReloading();
             }
                 
-            if (Input.GetButtonDown("Fire1") && Time.time >= _nextTimeToFire && currentAmmo > 0)
+            if (Input.GetButtonDown("Fire1") && Time.time >= _nextTimeToFire && _currentAmmo > 0)
             {
                 muzzleEffect.Play();
             }
-            else if (Input.GetButton("Fire1") && Time.time >= _nextTimeToFire && currentAmmo > 0)
+            else if (Input.GetButton("Fire1") && Time.time >= _nextTimeToFire && _currentAmmo > 0)
             {
                 _isShooting = true;
                 _nextTimeToFire = Time.time + 1f / fireRate;
@@ -139,9 +138,9 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Shoot()
         {
-            if (currentAmmo > 0 && _isShooting)
+            if (_currentAmmo > 0 && _isShooting)
             {
-                currentAmmo--;
+                _currentAmmo--;
                 //_audioSource.clip = audioClips[0];
                 //_audioSource.Play();
                 _animator.SetBool("isShooting", _isShooting);
@@ -203,75 +202,75 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void SetCurrentAmmo()
         {
-            if (currentAmmo == 1)
+            if (_currentAmmo == 1)
             {
-                currentAmmo = startAmmo;
-                currentAmmoText.text = currentAmmo.ToString();
+                _currentAmmo = startAmmo;
+                currentAmmoText.text = _currentAmmo.ToString();
             }
             else
             {
-                currentAmmo = availableAmmo;
-                currentAmmoText.text = currentAmmo.ToString();
+                _currentAmmo = _availableAmmo;
+                currentAmmoText.text = _currentAmmo.ToString();
             }
         }
 
         private void SetCurrentClipAmmo()
         {
-            if (currentClipAmmo == 1)
+            if (_currentClipAmmo == 1)
             {
-                currentClipAmmo = startClipAmmo;
-                clipAmmoText.text = currentClipAmmo.ToString();
+                _currentClipAmmo = startClipAmmo;
+                clipAmmoText.text = _currentClipAmmo.ToString();
             }
             else
             {
-                currentClipAmmo = availableClipAmmo;
-                clipAmmoText.text = currentClipAmmo.ToString();
+                _currentClipAmmo = _availableClipAmmo;
+                clipAmmoText.text = _currentClipAmmo.ToString();
             }
         }
 
         private void AmmoLimitationAndSet()
         {
-            if (currentClipAmmo >= startAmmo)
+            if (_currentClipAmmo >= startAmmo)
             {
-                if (currentAmmo <= 0 && currentClipAmmo > 0)
+                if (_currentAmmo <= 0 && _currentClipAmmo > 0)
                 {
-                    currentAmmo = startAmmo;
-                    currentClipAmmo -= startAmmo;
+                    _currentAmmo = startAmmo;
+                    _currentClipAmmo -= startAmmo;
                 }
-                else if (currentAmmo > startAmmo && currentClipAmmo > 0)
+                else if (_currentAmmo > startAmmo && _currentClipAmmo > 0)
                 {
-                    currentAmmo = startAmmo;
-                    currentClipAmmo -= startAmmo;
+                    _currentAmmo = startAmmo;
+                    _currentClipAmmo -= startAmmo;
                 }
-                else if (currentAmmo > 0 && currentClipAmmo > 0)
+                else if (_currentAmmo > 0 && _currentClipAmmo > 0)
                 {
-                    currentClipAmmo -= (startAmmo - currentAmmo);
-                    currentAmmo = startAmmo;
+                    _currentClipAmmo -= (startAmmo - _currentAmmo);
+                    _currentAmmo = startAmmo;
                 }
             }
             else
             {
-                if (currentAmmo <= 0 && currentClipAmmo > 0)
+                if (_currentAmmo <= 0 && _currentClipAmmo > 0)
                 {
-                    currentAmmo = currentClipAmmo;
-                    currentClipAmmo = 0;
+                    _currentAmmo = _currentClipAmmo;
+                    _currentClipAmmo = 0;
                 }
-                else if (currentAmmo > startAmmo && currentClipAmmo > 0)
+                else if (_currentAmmo > startAmmo && _currentClipAmmo > 0)
                 {
-                    currentAmmo = currentClipAmmo;
-                    currentClipAmmo = 0;
+                    _currentAmmo = _currentClipAmmo;
+                    _currentClipAmmo = 0;
                 }
-                else if (currentAmmo > 0 && currentClipAmmo > 0)
+                else if (_currentAmmo > 0 && _currentClipAmmo > 0)
                 {
-                    if (currentAmmo + currentClipAmmo > startAmmo)
+                    if (_currentAmmo + _currentClipAmmo > startAmmo)
                     {
-                        currentClipAmmo = (currentAmmo + currentClipAmmo) - startAmmo;
-                        currentAmmo = startAmmo;
+                        _currentClipAmmo = (_currentAmmo + _currentClipAmmo) - startAmmo;
+                        _currentAmmo = startAmmo;
                     }
-                    else if (currentAmmo + currentClipAmmo <= startAmmo)
+                    else if (_currentAmmo + _currentClipAmmo <= startAmmo)
                     {
-                        currentAmmo = currentAmmo + currentClipAmmo;
-                        currentClipAmmo = 0;
+                        _currentAmmo = _currentAmmo + _currentClipAmmo;
+                        _currentClipAmmo = 0;
                     }
                 }
             }
@@ -279,8 +278,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void SetTextBullets()
         {
-            currentAmmoText.text = currentAmmo.ToString();
-            clipAmmoText.text = currentClipAmmo.ToString();
+            currentAmmoText.text = _currentAmmo.ToString();
+            clipAmmoText.text = _currentClipAmmo.ToString();
         }
 
         #endregion

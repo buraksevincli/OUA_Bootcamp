@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4562799558224224499, guid: 09aade0ecefd01e4b8f7661acf64f5c2, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8345070699079395522, guid: 09aade0ecefd01e4b8f7661acf64f5c2, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -223,6 +227,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1316766164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4145527721246014144, guid: 1f5abfda1a7cb544cbc820a695140514, type: 3}
+  m_PrefabInstance: {fileID: 4145527720795595384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1371027031 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4145527722148779055, guid: 1f5abfda1a7cb544cbc820a695140514, type: 3}
@@ -243,6 +252,11 @@ MonoBehaviour:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4145527722505797536, guid: 1f5abfda1a7cb544cbc820a695140514, type: 3}
   m_PrefabInstance: {fileID: 4145527720795595384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1882721627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2272059672038527940, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+  m_PrefabInstance: {fileID: 5379550442541776131}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2107396944 stripped
 MonoBehaviour:
@@ -660,6 +674,10 @@ PrefabInstance:
       propertyPath: currentAmmoText
       value: 
       objectReference: {fileID: 2107396944}
+    - target: {fileID: 2272059672038527940, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4764412629493188191, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
       propertyPath: m_Name
       value: PlayerPack
@@ -676,6 +694,14 @@ PrefabInstance:
       propertyPath: heavyGunImage
       value: 
       objectReference: {fileID: 1371027031}
+    - target: {fileID: 7565440467322889102, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: fireRate
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565440467322889102, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: clipPanel
+      value: 
+      objectReference: {fileID: 1316766164}
     - target: {fileID: 8832784532072453327, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -792,7 +818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponType: 0
-  heavyGun: {fileID: 0}
+  heavyGun: {fileID: 1882721627}
   pistol: {fileID: 0}
   ammo: 100
 --- !u!135 &6426430321404492396

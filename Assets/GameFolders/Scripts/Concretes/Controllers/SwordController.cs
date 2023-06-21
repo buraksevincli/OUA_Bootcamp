@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         [SerializeField] private float fireRate;
         
         [SerializeField] private GameObject impactEffect;
+        [SerializeField] private GameObject clipPanel;
 
         [SerializeField] private Camera fpsCam;
         [SerializeField] private AudioClip[] audioClips;
@@ -31,11 +33,21 @@ namespace GameFolders.Scripts.Concretes.Controllers
             //_audioSource = GetComponent<AudioSource>();
         }
 
+        private void OnEnable()
+        {
+            clipPanel.SetActive(false);
+        }
+
+        private void OnDisable()
+        {
+            clipPanel.SetActive(true);
+        }
+
         private void Update()
         {
             _animator.SetBool("isShooting", _isShooting);
             
-            if (Input.GetButtonDown("Fire1") && Time.time >= _nextTimeToFire)
+            if (Input.GetButton("Fire1") && Time.time >= _nextTimeToFire)
             {
                 _isShooting = true;
                 _nextTimeToFire = Time.time + 1f / fireRate;
@@ -58,6 +70,10 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 if (hit.transform.TryGetComponent(out TargetController target))
                 {
                     target.TakeDamage(damage);
+                    Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+                }
+                else
+                {
                     Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
                 }
 
