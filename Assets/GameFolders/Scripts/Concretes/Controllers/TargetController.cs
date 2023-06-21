@@ -1,4 +1,6 @@
+using System;
 using GameFolders.Scripts.Concretes.Managers;
+using GameFolders.Scripts.Concretes.ObjectPooling;
 using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.Controllers
@@ -7,6 +9,13 @@ namespace GameFolders.Scripts.Concretes.Controllers
     {
         [SerializeField] private float health;
         [SerializeField] private GameObject explodeEffect;
+
+        private EnemyController _enemyController;
+
+        private void Awake()
+        {
+            _enemyController = GetComponent<EnemyController>();
+        }
 
         public void TakeDamage(float amount)
         {
@@ -24,7 +33,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
             GameManager.Instance.Score++;
 
-            Destroy(this.gameObject);
+            ObjectPooler.Instance.SetPool(_enemyController);
         }
     }
 }
