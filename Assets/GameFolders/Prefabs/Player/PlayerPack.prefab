@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5386644944669366615}
   - component: {fileID: 1913754404772048859}
   - component: {fileID: 2747576551906227115}
+  - component: {fileID: 1414593891}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -218,6 +219,20 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1414593891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747576551906227111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314c6c5eca0b7f243baad86d41f04fe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroyOnLoad: 0
+  playerHealthText: {fileID: 0}
 --- !u!1 &4764412629493188191
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 284fe0dd2281a934a8584a7a875a481e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1182333490507655628, guid: 284fe0dd2281a934a8584a7a875a481e, type: 3}
       propertyPath: m_CastShadows

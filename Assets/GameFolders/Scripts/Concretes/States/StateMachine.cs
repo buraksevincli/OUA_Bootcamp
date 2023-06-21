@@ -32,6 +32,16 @@ namespace GameFolders.Scripts.Concretes.States
             
             _currentState.Tick();
         }
+        
+        public void FixedTick()
+        {
+            _currentState.FixedTick();
+        }
+
+        public void LateTick()
+        {
+            _currentState.LateTick();
+        }
 
         private StateTransformer CheckForTransformer()
         {

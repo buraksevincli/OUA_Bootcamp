@@ -18,20 +18,12 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                if (heavyGun.activeSelf)
-                {
-                    _gunController = heavyGun.GetComponent<GunController>();
-                }
-                else if (pistol.activeSelf)
-                {
-                    _gunController = pistol.GetComponent<GunController>();
-                }
-                
                 switch (weaponType)
                 {
                     case WeaponType.HeavyGun:
                         if (heavyGun.activeSelf)
                         {
+                            _gunController = heavyGun.GetComponent<GunController>();
                             _gunController.CurrentClipAmmo += ammo;
                         }
                         else
@@ -42,6 +34,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
                     case WeaponType.Pistol:
                         if (pistol.activeSelf)
                         {
+                            _gunController = pistol.GetComponent<GunController>();
                             _gunController.CurrentClipAmmo += ammo;
                         }
                         else

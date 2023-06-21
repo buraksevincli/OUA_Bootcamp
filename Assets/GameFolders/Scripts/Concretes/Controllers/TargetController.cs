@@ -11,6 +11,16 @@ namespace GameFolders.Scripts.Concretes.Controllers
         [SerializeField] private GameObject explodeEffect;
 
         private EnemyController _enemyController;
+        private bool _isDead;
+        public bool IsDead => _isDead;
+
+        private float _currentHealth;
+
+        private void OnEnable()
+        {
+            _currentHealth = health;
+            _isDead = false;
+        }
 
         private void Awake()
         {
@@ -19,9 +29,9 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         public void TakeDamage(float amount)
         {
-            health -= amount;
+            _currentHealth -= amount;
 
-            if (health <= 0f)
+            if (_currentHealth <= 0f)
             {
                 Die();
             }
@@ -29,6 +39,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Die()
         {
+            _isDead = true;
+            
             Instantiate(explodeEffect, transform.position, transform.rotation);
 
             GameManager.Instance.Score++;
