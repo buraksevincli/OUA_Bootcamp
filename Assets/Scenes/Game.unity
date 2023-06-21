@@ -674,13 +674,13 @@ PrefabInstance:
       propertyPath: currentAmmoText
       value: 
       objectReference: {fileID: 2107396944}
-    - target: {fileID: 2272059672038527940, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4764412629493188191, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
       propertyPath: m_Name
       value: PlayerPack
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153113008556063160, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5379550443239786188, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
       propertyPath: swordImage
@@ -694,10 +694,6 @@ PrefabInstance:
       propertyPath: heavyGunImage
       value: 
       objectReference: {fileID: 1371027031}
-    - target: {fileID: 7565440467322889102, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
-      propertyPath: fireRate
-      value: 0.9
-      objectReference: {fileID: 0}
     - target: {fileID: 7565440467322889102, guid: 4edad0621890cab4481ee0ae6b5c3327, type: 3}
       propertyPath: clipPanel
       value: 
