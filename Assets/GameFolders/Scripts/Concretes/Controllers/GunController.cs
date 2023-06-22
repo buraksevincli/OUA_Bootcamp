@@ -105,14 +105,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
                 StartReloading();
             }
                 
-            if (Input.GetButtonDown("Fire1") && Time.time >= _nextTimeToFire && _currentAmmo > 0)
-            {
-                muzzleEffect.Play();
-            }
-            else if (Input.GetButton("Fire1") && Time.time >= _nextTimeToFire && _currentAmmo > 0)
+            if (Input.GetButton("Fire1") && Time.time >= _nextTimeToFire && _currentAmmo > 0)
             {
                 _isShooting = true;
                 _nextTimeToFire = Time.time + 1f / fireRate;
+
                 Shoot();
             }
             else if (Input.GetButtonUp("Fire1"))
@@ -138,6 +135,8 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Shoot()
         {
+            muzzleEffect.Play();
+
             if (_currentAmmo > 0 && _isShooting)
             {
                 _currentAmmo--;

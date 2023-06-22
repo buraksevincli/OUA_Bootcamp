@@ -8,11 +8,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
     {
         [SerializeField] private GameObject heavyGun;
         [SerializeField] private GameObject pistol;
-        [SerializeField] private GameObject sword;
+        //[SerializeField] private GameObject sword;
 
         [SerializeField] private GameObject heavyGunImage;
         [SerializeField] private GameObject pistolImage;
-        [SerializeField] private GameObject swordImage;
+        //[SerializeField] private GameObject swordImage;
 
         private WaitForSeconds _wait;
 
@@ -31,10 +31,10 @@ namespace GameFolders.Scripts.Concretes.Controllers
             {
                 PistolSelect();
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                SwordSelect();
-            }
+            // else if (Input.GetKeyDown(KeyCode.Alpha3))
+            // {
+            //     SwordSelect();
+            // }
         }
 
         private void HeavyGunSelect()
@@ -51,7 +51,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private IEnumerator HeavyGunSelected()
         {
             heavyGun.SetActive(true);
-            sword.SetActive(false);
+            //sword.SetActive(false);
             pistol.SetActive(false);
 
             heavyGunImage.SetActive(true);
@@ -75,7 +75,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private IEnumerator PistolSelected()
         {
             heavyGun.SetActive(false);
-            sword.SetActive(false);
+            //sword.SetActive(false);
             pistol.SetActive(true);
             
             pistolImage.SetActive(true);
@@ -85,24 +85,22 @@ namespace GameFolders.Scripts.Concretes.Controllers
             pistolImage.SetActive(false);
         }
 
-        private void SwordSelect()
-        {
-            StartCoroutine(SwordSelected());
-        }
-
-        private IEnumerator SwordSelected()
-        {
-            heavyGun.SetActive(false);
-            sword.SetActive(true);
-            pistol.SetActive(false);
-            
-            swordImage.SetActive(true);
-
-            yield return _wait;
-
-            swordImage.SetActive(false);
-        }
-
-        
+        // private void SwordSelect()
+        // {
+        //     StartCoroutine(SwordSelected());
+        // }
+        //
+        // private IEnumerator SwordSelected()
+        // {
+        //     heavyGun.SetActive(false);
+        //     sword.SetActive(true);
+        //     pistol.SetActive(false);
+        //     
+        //     swordImage.SetActive(true);
+        //
+        //     yield return _wait;
+        //
+        //     swordImage.SetActive(false);
+        // }
     }
 }
