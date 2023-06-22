@@ -1,4 +1,3 @@
-using System;
 using GameFolders.Scripts.Concretes.Movements;
 using GameFolders.Scripts.Concretes.States;
 using GameFolders.Scripts.Concretes.States.EnemyStates;
@@ -16,9 +15,10 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private StateMachine _stateMachine;
         private NavMeshAgent _navMeshAgent;
         private TargetController _targetController;
+        private Animator _animator;
 
         public bool CanAttack => Vector3.Distance(_player.position,
-            this.transform.position) <= _navMeshAgent.stoppingDistance && _navMeshAgent.velocity == Vector3.zero;
+            this.transform.position) <= _navMeshAgent.stoppingDistance + .4f;
 
         private void Awake()
         {
@@ -27,13 +27,14 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
             _navMeshAgent = GetComponent<NavMeshAgent>();
             _targetController = GetComponent<TargetController>();
+            _animator = transform.GetChild(0).GetComponent<Animator>();
             
             _player = Camera.main.transform;
         }
 
         private void Start()
         {
-            AttackState attackState = new AttackState(this, _player, takeDamageToPlayer);
+            AttackState attackState = new AttackState(this, _player, _animator , takeDamageToPlayer);
             ChaseState chaseState = new ChaseState(_enemyMover, _player);
             DeadState deadState = new DeadState();
             
@@ -51,8 +52,6 @@ namespace GameFolders.Scripts.Concretes.Controllers
 
         private void Update()
         {
-            Debug.Log(CanAttack);
-
             _stateMachine.Tick();
         }
 

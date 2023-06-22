@@ -1,4 +1,3 @@
-using System;
 using GameFolders.Scripts.Concretes.Managers;
 using GameFolders.Scripts.Concretes.ObjectPooling;
 using UnityEngine;
@@ -11,20 +10,22 @@ namespace GameFolders.Scripts.Concretes.Controllers
         [SerializeField] private GameObject explodeEffect;
 
         private EnemyController _enemyController;
+        private Transform _transform;
         private bool _isDead;
         public bool IsDead => _isDead;
 
         private float _currentHealth;
 
+        private void Awake()
+        {
+            _enemyController = GetComponent<EnemyController>();
+            _transform = GetComponent<Transform>();
+        }
+        
         private void OnEnable()
         {
             _currentHealth = health;
             _isDead = false;
-        }
-
-        private void Awake()
-        {
-            _enemyController = GetComponent<EnemyController>();
         }
 
         public void TakeDamage(float amount)
@@ -40,11 +41,11 @@ namespace GameFolders.Scripts.Concretes.Controllers
         private void Die()
         {
             _isDead = true;
-            
-            Instantiate(explodeEffect, transform.position, transform.rotation);
 
             GameManager.Instance.Score++;
 
+            Instantiate(explodeEffect, _transform.position, _transform.rotation);
+            
             ObjectPooler.Instance.SetPool(_enemyController);
         }
     }

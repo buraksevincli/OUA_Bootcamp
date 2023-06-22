@@ -8,12 +8,14 @@ namespace GameFolders.Scripts.Concretes.States.EnemyStates
     {
         private EnemyController _enemyController;
         private Transform _player;
+        private Animator _animator;
         private int _damage;
         
-        public AttackState(EnemyController enemyController, Transform player, int damage)
+        public AttackState(EnemyController enemyController, Transform player, Animator animator, int damage)
         {
             _enemyController = enemyController;
             _player = player;
+            _animator = animator;
             _damage = damage;
         }
         
@@ -30,18 +32,16 @@ namespace GameFolders.Scripts.Concretes.States.EnemyStates
 
         public void LateTick()
         {
-            //animasyon işlemini true yap
+            _animator.SetBool("onAttack", true);
         }
         
         public void OnEnter()
         {
-            Debug.Log($"{nameof(AttackState)} {nameof(OnEnter)}");
         }
 
         public void OnExit()
         {
-            //animasyon işlemini false yap
-            Debug.Log($"{nameof(AttackState)} {nameof(OnExit)}");
+            _animator.SetBool("onAttack", false);
         }
     }
 }

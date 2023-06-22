@@ -1,4 +1,5 @@
 using GameFolders.Scripts.Abstracts.States;
+using GameFolders.Scripts.Concretes.Controllers;
 using GameFolders.Scripts.Concretes.Movements;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace GameFolders.Scripts.Concretes.States.EnemyStates
     {
         private EnemyMover _enemyMover;
         private Transform _player;
+        private TargetController _targetController;
         
         public ChaseState(EnemyMover enemyMover, Transform player)
         {
@@ -32,12 +34,10 @@ namespace GameFolders.Scripts.Concretes.States.EnemyStates
 
         public void OnEnter()
         {
-            Debug.Log($"{nameof(ChaseState)} {nameof(OnEnter)}");
         }
         
         public void OnExit()
         {
-            Debug.Log($"{nameof(ChaseState)} {nameof(OnExit)}");
         }
     }
 }

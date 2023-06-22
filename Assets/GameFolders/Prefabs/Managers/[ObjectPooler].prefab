@@ -46,5 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dontDestroyOnLoad: 0
   enemyPrefab:
-  - {fileID: 1703063090940122314, guid: cd784c66de51c0d4989a43c1740608c2, type: 3}
-  poolSize: 20
+  - {fileID: 1703063090940122314, guid: 1010dc9b36f0f69419f820778901e325, type: 3}
+  - {fileID: 1703063090940122314, guid: a6ff6b93af92f004fbbdd191b1f99ef2, type: 3}
+  - {fileID: 1703063090940122314, guid: 4249407c32433f54a9dea808de149993, type: 3}
+  - {fileID: 1703063090940122314, guid: 0601e571529512a4ab23da2a0895ee49, type: 3}
+  poolSize: 5
