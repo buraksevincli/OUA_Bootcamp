@@ -76,6 +76,8 @@ Retrospective toplantısında alınan kararlar arasında iletişimin düzeltilme
 - **Daily Scrum**: Daily Scrum toplantıları, zaman sınırlılıkları nedeniyle günlük Whatsapp üzerinden konuşmalarla gerçekleştirilme kararı alındı  Bunun yanında Discord üzerinden üç günde bir toplanılıp süreç değerlendirilip ne yapılacağı hakkında konuşulmaktadır. Örnek bir Daily Scrum toplantısı dosyası, Readme dosyasında tarafımca paylaşılmıştır.
 -  **Sprint 2 Daily Scrum Chats**:
 **Sprint board update: Sprint board screenshotları**: Backlog2
+![Ekran görüntüsü 2023-07-03 014453](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/939940e0-16c7-4f27-bb90-b16f629326b6)
+![Ekran görüntüsü 2023-07-03 014054](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/7789a4a0-359c-4569-b08c-caea72a1934d)
 
 -**Ürün Durumu**: Ekran görüntüleri: 
 
