@@ -71,10 +71,11 @@ Retrospective toplantısında alınan kararlar arasında iletişimin düzeltilme
 - İşbirliği ve paylaşım kültürünün teşvik edilmesinin arttırılması: Ekip üyeleri, birbirleriyle daha fazla işbirliği yapmayı teşvik etmek için daha çok çaba sarf edilecektir.
 # Sprint 2
 
-- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
-
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan (alınan puan 100)
+  
 - **Daily Scrum**: Daily Scrum toplantıları, zaman sınırlılıkları nedeniyle günlük Whatsapp üzerinden konuşmalarla gerçekleştirilme kararı alındı  Bunun yanında Discord üzerinden üç günde bir toplanılıp süreç değerlendirilip ne yapılacağı hakkında konuşulmaktadır. Örnek bir Daily Scrum toplantısı dosyası, Readme dosyasında tarafımca paylaşılmıştır.
 -  **Sprint 2 Daily Scrum Chats**:
+-  https://1drv.ms/w/s!Aq-ZFEb-npHagmc2GRdcSPjwGUMg?e=cksM6W
 **Sprint board update: Sprint board screenshotları**: Backlog2
 ![Ekran görüntüsü 2023-07-03 014453](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/939940e0-16c7-4f27-bb90-b16f629326b6)
 ![Ekran görüntüsü 2023-07-03 014054](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/7789a4a0-359c-4569-b08c-caea72a1934d)
@@ -101,4 +102,4 @@ Hasan Mücahit Aktaş,Burak Sevinçli,Kerim Kahramaner,Yağmur Mine Saygılı,H�
 - İletişimsizlik konusunda farkındalık oluşturuldu ve ekip üyeleri arasında daha sık ve etkili iletişim sağlanması için adımlar atıldı.
 - Takım üyelerinin gelecek sprintlerde daha fazla aktif olması gerektiğine vurgu yapıldı.
 Product Backlog URL
-Flutter Team 52 Miro Backlog Board
+
