@@ -84,6 +84,9 @@ Retrospective toplantısında alınan kararlar arasında iletişimin düzeltilme
 ![WhatsApp Görsel 2023-07-02 saat 22 05 35](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/52d5f39f-c747-4c5e-b547-854601a930e8)
 ![Ekran görüntüsü 2023-07-03 015533](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/dd899570-37c8-42a0-adbd-15f40bd844d5)
 ![Ekran görüntüsü 2023-07-03 015424](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/8790e7e4-3768-474e-b7cc-f99c3b7c52fb)
+![Ekran görüntüsü 2023-07-03 015459](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/47338c96-ac76-4f71-aeb7-3f5bcef07b67)
+![Ekran görüntüsü 2023-07-03 021903](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/6f039fd0-2e52-4809-b5cc-d386ca407607)
+
 
 **Sprint Review**: 
 Alınan kararlar: 
