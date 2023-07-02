@@ -74,7 +74,7 @@ Retrospective toplantısında alınan kararlar arasında iletişimin düzeltilme
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
 - **Daily Scrum**: Daily Scrum toplantıları, zaman sınırlılıkları nedeniyle günlük Whatsapp üzerinden konuşmalarla gerçekleştirilme kararı alındı  Bunun yanında Discord üzerinden üç günde bir toplanılıp süreç değerlendirilip ne yapılacağı hakkında konuşulmaktadır. Örnek bir Daily Scrum toplantısı dosyası, Readme dosyasında tarafımca paylaşılmıştır.
--  **Sprint 1 Daily Scrum Chats**:
+-  **Sprint 2 Daily Scrum Chats**:
 **Sprint board update: Sprint board screenshotları**: Backlog2
 
 -**Ürün Durumu**: Ekran görüntüleri: 
