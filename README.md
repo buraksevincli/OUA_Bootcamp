@@ -69,4 +69,27 @@ Alınan kararlar:
 Retrospective toplantısında alınan kararlar arasında iletişimin düzeltilmesi ve takım çalışmasının geliştirilmesi için aşağıda belirtildi:
 - Daha sık bir araya gelme geliştirilecek : Ekip, düzenli olarak toplantılar düzenleyerek takım içi iletişimi ve işbirliğini güçlendirecektir. Bu toplantılarda projelerin durumu, sorunlar, fikir alışverişi ve geribildirim paylaşımı gibi konular ele alınacaktır.
 - İşbirliği ve paylaşım kültürünün teşvik edilmesinin arttırılması: Ekip üyeleri, birbirleriyle daha fazla işbirliği yapmayı teşvik etmek için daha çok çaba sarf edilecektir.
+# Sprint 2
 
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+
+- **Daily Scrum**: Daily Scrum toplantıları, zaman sınırlılıkları nedeniyle günlük Whatsapp üzerinden konuşmalarla gerçekleştirilme kararı alındı  Bunun yanında Discord üzerinden üç günde bir toplanılıp süreç değerlendirilip ne yapılacağı hakkında konuşulmaktadır. Örnek bir Daily Scrum toplantısı dosyası, Readme dosyasında tarafımca paylaşılmıştır.
+-  **Sprint 1 Daily Scrum Chats**:
+**Sprint board update: Sprint board screenshotları**: Backlog2
+
+-**Ürün Durumu**: Ekran görüntüleri: 
+
+**Sprint Review**: 
+Alınan kararlar: 
+- İkinci sprintin başında belirlediğimiz hedeflere büyük ölçüde ulaşıldı
+- Öncelikli olarak gerçekleştirmemiz gereken görevleri tamamladık ve projenin ilerlemesini sağladık.
+- İlk sprintte yaşadığımız iletişim eksikliklerini göz önünde bulundurarak, ikinci sprintte iletişim ve iş birliği süreçlerine daha fazla önem verildi.
+- Ekip üyelerinin sorumlulukları ve rolleri ikinci sprint sonu raporu için gözden geçirildi. Gerekli durumlarda rol değişiklikleri veya yeni sorumluluklar belirlenecek..
+
+**Sprint Review katılımcıları**:
+Hasan Mücahit Aktaş,Burak Sevinçli,Kerim Kahramaner,Yağmur Mine Saygılı,Hüseyin Özgün
+ **Sprint Retrospective**:
+- İletişimsizlik konusunda farkındalık oluşturuldu ve ekip üyeleri arasında daha sık ve etkili iletişim sağlanması için adımlar atıldı.
+- Takım üyelerinin gelecek sprintlerde daha fazla aktif olması gerektiğine vurgu yapıldı.
+Product Backlog URL
+Flutter Team 52 Miro Backlog Board
