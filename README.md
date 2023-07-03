@@ -84,6 +84,7 @@ https://1drv.ms/w/s!Aq-ZFEb-npHagmc2GRdcSPjwGUMg?e=cksM6W
 
 - **Ürün Durumu**: Ekran görüntüleri:
 
+![WhatsApp Görsel 2023-07-02 saat 20 32 50](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/7f0a08e5-6435-4c9f-a2f3-90457c440747)
 ![WhatsApp Görsel 2023-07-02 saat 22 05 35](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/52d5f39f-c747-4c5e-b547-854601a930e8)
 ![Ekran görüntüsü 2023-07-03 015533](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/dd899570-37c8-42a0-adbd-15f40bd844d5)
 ![Ekran görüntüsü 2023-07-03 015424](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/8790e7e4-3768-474e-b7cc-f99c3b7c52fb)
