@@ -65,7 +65,7 @@ Alınan kararlar:
  **Sprint Review katılımcıları**: 
  Hasan Mücahit Aktaş,Burak Sevinçli,Kerim Kahramaner,Yağmur Mine Saygılı,Hüseyin Özgün
 
-**Sprint Retrospective**:
+ **Sprint Retrospective**:
 Retrospective toplantısında alınan kararlar arasında iletişimin düzeltilmesi ve takım çalışmasının geliştirilmesi için aşağıda belirtildi:
 - Daha sık bir araya gelme geliştirilecek : Ekip, düzenli olarak toplantılar düzenleyerek takım içi iletişimi ve işbirliğini güçlendirecektir. Bu toplantılarda projelerin durumu, sorunlar, fikir alışverişi ve geribildirim paylaşımı gibi konular ele alınacaktır.
 - İşbirliği ve paylaşım kültürünün teşvik edilmesinin arttırılması: Ekip üyeleri, birbirleriyle daha fazla işbirliği yapmayı teşvik etmek için daha çok çaba sarf edilecektir.
@@ -100,7 +100,8 @@ Alınan kararlar:
 
 **Sprint Review katılımcıları**:
 Hasan Mücahit Aktaş,Burak Sevinçli,Kerim Kahramaner,Yağmur Mine Saygılı,Hüseyin Özgün
- **Sprint Retrospective**:
+ 
+  **Sprint Retrospective**:
 - İletişimsizlik konusunda farkındalık oluşturuldu ve ekip üyeleri arasında daha sık ve etkili iletişim sağlanması için adımlar atıldı.
 - Takım üyelerinin gelecek sprintlerde daha fazla aktif olması gerektiğine vurgu yapıldı ve üstünde durularak bu konu hakkında belirli sorunlar üzerine tartışıldı.
 - Bu tartışmaların sonucunda, takım üyelerinin daha fazla sorumluluk alması, işleri aktif bir şekilde ele almaları ve birbirleriyle daha sık iletişimde olmaları konusunda farkındalık oluştu.
