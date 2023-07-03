@@ -78,7 +78,7 @@ Retrospective toplantısında alınan kararlar arasında iletişimin düzeltilme
 https://1drv.ms/w/s!Aq-ZFEb-npHagmc2GRdcSPjwGUMg?e=cksM6W
 
 **Sprint board update: Sprint board screenshotları**: Backlog2
-![Ekran görüntüsü 2023-07-03 014453](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/939940e0-16c7-4f27-bb90-b16f629326b6)
+
 ![Ekran görüntüsü 2023-07-03 014054](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/7789a4a0-359c-4569-b08c-caea72a1934d)
 
 -**Ürün Durumu**: Ekran görüntüleri:
