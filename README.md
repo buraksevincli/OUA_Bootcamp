@@ -82,7 +82,7 @@ https://1drv.ms/w/s!Aq-ZFEb-npHagmc2GRdcSPjwGUMg?e=cksM6W
 ![Ekran görüntüsü 2023-07-03 031307](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/002e1b11-4567-4f0b-8ce4-5c8d9f7be143)
 ![Ekran görüntüsü 2023-07-03 014054](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/7789a4a0-359c-4569-b08c-caea72a1934d)
 
--**Ürün Durumu**: Ekran görüntüleri:
+- **Ürün Durumu**: Ekran görüntüleri:
 
 ![WhatsApp Görsel 2023-07-02 saat 22 05 35](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/52d5f39f-c747-4c5e-b547-854601a930e8)
 ![Ekran görüntüsü 2023-07-03 015533](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/dd899570-37c8-42a0-adbd-15f40bd844d5)
@@ -108,6 +108,6 @@ Hasan Mücahit Aktaş,Burak Sevinçli,Kerim Kahramaner,Yağmur Mine Saygılı,H�
 - Alınan bu adımların takım performansını ve sprint başarılarını olumlu yönde etkileyeceğini düşünmekteyiz.
 
 ## Product Backlog URL**:
-Unity Team U-165 Trello Backlog Sprint 2
+- Unity Team U-165 Trello Backlog Sprint 2
 https://trello.com/invite/b/MAd8Gx4E/ATTI57b59fba8ce8485c5194b5270f94ba6aAEBB3821/sprint-2
 
