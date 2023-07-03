@@ -79,6 +79,7 @@ https://1drv.ms/w/s!Aq-ZFEb-npHagmc2GRdcSPjwGUMg?e=cksM6W
 
 **Sprint board update: Sprint board screenshotları**: Backlog2
 
+![Ekran görüntüsü 2023-07-03 031307](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/002e1b11-4567-4f0b-8ce4-5c8d9f7be143)
 ![Ekran görüntüsü 2023-07-03 014054](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/7789a4a0-359c-4569-b08c-caea72a1934d)
 
 -**Ürün Durumu**: Ekran görüntüleri:
