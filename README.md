@@ -102,7 +102,11 @@ Alınan kararlar:
 Hasan Mücahit Aktaş,Burak Sevinçli,Kerim Kahramaner,Yağmur Mine Saygılı,Hüseyin Özgün
  **Sprint Retrospective**:
 - İletişimsizlik konusunda farkındalık oluşturuldu ve ekip üyeleri arasında daha sık ve etkili iletişim sağlanması için adımlar atıldı.
-- Takım üyelerinin gelecek sprintlerde daha fazla aktif olması gerektiğine vurgu yapıldı ve üstünde durularak bu konu hakkında belirli sorunlar üzerine tartışılarak çözüldü.
+- Takım üyelerinin gelecek sprintlerde daha fazla aktif olması gerektiğine vurgu yapıldı ve üstünde durularak bu konu hakkında belirli sorunlar üzerine tartışıldı.
+- Bu tartışmaların sonucunda, takım üyelerinin daha fazla sorumluluk alması, işleri aktif bir şekilde ele almaları ve birbirleriyle daha sık iletişimde olmaları konusunda farkındalık oluştu.
+- Ayrıca, ekip içindeki yeteneklerin ve görev dağılımının daha dengeli bir şekilde planlanması, motivasyonun yükseltilmesi ve işbirliğinin artırılması için çözüm önerileri sunuldu.
+- Alınan bu adımların takım performansını ve sprint başarılarını olumlu yönde etkileyeceğini düşünmekteyiz.
+
 ## Product Backlog URL**:
 Unity Team U-165 Trello Backlog Sprint 2
 https://trello.com/invite/b/MAd8Gx4E/ATTI57b59fba8ce8485c5194b5270f94ba6aAEBB3821/sprint-2
