@@ -7,5 +7,7 @@ namespace GameFolders.Scripts.Abstracts.Scriptables
     public class EventData : ScriptableObject
     {
         public Action GameOver { get; set; }
+        
+        public Action OnZombieDead { get; set; }
     }
 }
