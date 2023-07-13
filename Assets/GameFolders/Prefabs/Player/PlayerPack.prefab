@@ -233,6 +233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dontDestroyOnLoad: 0
   playerHealthText: {fileID: 0}
+  firstAid: 50
 --- !u!1 &4764412629493188191
 GameObject:
   m_ObjectHideFlags: 0

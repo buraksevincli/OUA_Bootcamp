@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using GameFolders.Scripts.Abstracts.Utilities;
 using GameFolders.Scripts.Concretes.Managers;
 using PlayFab;
 using PlayFab.ClientModels;
@@ -7,7 +8,7 @@ using UnityEngine;
 
 namespace GameFolders.Scripts.Concretes.PlayFab
 {
-    public class NewPlayFabManager : MonoBehaviour
+    public class NewPlayFabManager : MonoSingleton<NewPlayFabManager>
     {
         [Header("UI")] 
         [SerializeField] private TMP_Text messageText;

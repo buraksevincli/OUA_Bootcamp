@@ -75,8 +75,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e54c3c774813654e8984b28a4f141ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
-  explodeEffect: {fileID: 100004, guid: b46890100828db6429ff69c322b45893, type: 3}
+  health: 100
+  explodeEffect: {fileID: 167524, guid: fdac75e990da47649b31f10049c400b0, type: 3}
+  zombieScore: 15
 --- !u!195 &1703063090940122315
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
     {
         [SerializeField] private float health;
         [SerializeField] private GameObject explodeEffect;
+        [SerializeField] private int zombieScore;
 
         private EnemyController _enemyController;
         private Transform _transform;
@@ -42,11 +43,13 @@ namespace GameFolders.Scripts.Concretes.Controllers
         {
             _isDead = true;
 
-            GameManager.Instance.Score++;
+            GameManager.Instance.Score += zombieScore;
 
             Instantiate(explodeEffect, _transform.position, _transform.rotation);
             
             ObjectPooler.Instance.SetPool(_enemyController);
+            
+            DataManager.Instance.EventData.OnZombieDead?.Invoke();
         }
     }
 }
