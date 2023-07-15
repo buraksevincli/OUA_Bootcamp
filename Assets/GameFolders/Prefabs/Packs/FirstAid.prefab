@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2822290340275071749}
   m_Layer: 0
   m_Name: FirstAid
-  m_TagString: Untagged
+  m_TagString: FirstAid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 221385513933249850}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 62.953808, y: 3.2916145, z: -0.53069115}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

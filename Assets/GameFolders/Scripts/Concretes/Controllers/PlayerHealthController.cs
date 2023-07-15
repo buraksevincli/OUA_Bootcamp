@@ -55,6 +55,7 @@ namespace GameFolders.Scripts.Concretes.Controllers
             if (other.gameObject.CompareTag("FirstAid"))
             {
                 _playerHealth += firstAid;
+                other.gameObject.SetActive(false);
             }
         }
     }

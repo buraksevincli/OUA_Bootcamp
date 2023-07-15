@@ -45,7 +45,7 @@ namespace GameFolders.Scripts.Concretes.Managers
 
         public void LoadMenuScene()
         {
-            SceneManager.LoadScene("Login");
+            SceneManager.LoadScene("Menu");
         }
     }
 }

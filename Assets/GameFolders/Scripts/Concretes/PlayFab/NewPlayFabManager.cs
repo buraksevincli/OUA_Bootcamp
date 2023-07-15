@@ -18,6 +18,7 @@ namespace GameFolders.Scripts.Concretes.PlayFab
 
         [SerializeField] private GameObject namePanel;
         [SerializeField] private GameObject loginPanel;
+        [SerializeField] private TMP_Text[] leaderboardText;
 
         private string _displayName;
 
@@ -77,7 +78,7 @@ namespace GameFolders.Scripts.Concretes.PlayFab
         {
             foreach (var item in result.Leaderboard)
             {
-                Debug.Log(item.Position + " " + item.DisplayName + " " + item.StatValue);
+                leaderboardText[item.Position].text = $" {item.Position}# {item.DisplayName}                    {item.StatValue}";
             }
         }
         
@@ -127,7 +128,7 @@ namespace GameFolders.Scripts.Concretes.PlayFab
 
         private void OnDisplayNameUpdate(UpdateUserTitleDisplayNameResult obj)
         {
-            GameManager.Instance.LoadGameScene("Game");
+            GameManager.Instance.LoadGameScene("Menu");
         }
         
         private void GetDisplayName()
@@ -154,7 +155,7 @@ namespace GameFolders.Scripts.Concretes.PlayFab
             else
             {
                 messageText.text = "Logged in!!";
-                GameManager.Instance.LoadGameScene("Game");
+                GameManager.Instance.LoadGameScene("Menu");
             }
         }
         public void LoginButton()
