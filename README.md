@@ -113,3 +113,14 @@ Hasan Mücahit Aktaş,Burak Sevinçli,Kerim Kahramaner,Yağmur Mine Saygılı,H�
 - Unity Team U-165 Trello Backlog Sprint 2
 https://trello.com/invite/b/MAd8Gx4E/ATTI57b59fba8ce8485c5194b5270f94ba6aAEBB3821/sprint-2
 
+# Sprint 3
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan (tamamlanan puan 90)
+
+- **Daily Scrum**: Daily Scrum toplantıları, zaman sınırlılıkları nedeniyle günlük Whatsapp üzerinden konuşmalarla gerçekleştirilme kararı alındı.Bunun yanında Discord üzerinden üç günde bir yapılan toplantılar zaman uyuşmazlıkları nedeniyle müsait olan ekip üyeleriyle birlikte zamanlarına göre süreç değerlendirilip ne yapılacağı hakkında konuşulmaktadır. Örnek bir Daily Scrum toplantısı dosyası, Readme dosyasında tarafımca paylaşılmıştır.
+-  **Sprint 2 Daily Scrum Chats**:
+-  https://1drv.ms/w/s!Aq-ZFEb-npHagns_H56KwqhifZrN?e=lUyahj
+
+**Sprint board update: Sprint board screenshotları**:
+
+
