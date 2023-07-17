@@ -8,8 +8,8 @@ Oyun ve Uygulama Akademisi
 
 ## Takım Elemanları
 - Hasan Mücahit Aktaş: Scrum Master / Developer
-- Burak Sevinçli: Developer
-- Kerim Kahramaner: 3D Artist / Product Owner
+- Burak Sevinçli: Developer/ Product Owner
+- Kerim Kahramaner: 3D Artist 
 - Hüseyin Özgün: Developer
 - Yağmur Mine Saygılı: 3D Artist
 
