@@ -121,6 +121,8 @@ https://trello.com/invite/b/MAd8Gx4E/ATTI57b59fba8ce8485c5194b5270f94ba6aAEBB382
 -  **Sprint 2 Daily Scrum Chats**:
 -  https://1drv.ms/w/s!Aq-ZFEb-npHagns_H56KwqhifZrN?e=lUyahj
 
-**Sprint board update: Sprint board screenshotları**:
+**Sprint board update: Sprint board screenshotları**: Backlog3
+![Ekran görüntüsü 2023-07-17 031427](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/721b6681-fca7-452b-8c10-6ebcff9ed1a7)
+![Ekran görüntüsü 2023-07-17 031350](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/affd7ef7-ae91-4fc5-9252-07b25dedf527)
 
-
+- **Ürün Durumu**: Ekran görüntüleri:
