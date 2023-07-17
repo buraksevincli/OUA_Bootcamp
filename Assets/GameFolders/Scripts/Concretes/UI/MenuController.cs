@@ -1,4 +1,3 @@
-using System;
 using GameFolders.Scripts.Concretes.PlayFab;
 using UnityEngine;
 using UnityEngine.SceneManagement;

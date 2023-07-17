@@ -18,7 +18,8 @@ namespace GameFolders.Scripts.Concretes.PlayFab
 
         [SerializeField] private GameObject namePanel;
         [SerializeField] private GameObject loginPanel;
-        [SerializeField] private TMP_Text[] leaderboardText;
+        [SerializeField] private TMP_Text[] leaderboardNameText;
+        [SerializeField] private TMP_Text[] scoreText;
 
         private string _displayName;
 
@@ -78,7 +79,8 @@ namespace GameFolders.Scripts.Concretes.PlayFab
         {
             foreach (var item in result.Leaderboard)
             {
-                leaderboardText[item.Position].text = $" {item.Position}# {item.DisplayName}                    {item.StatValue}";
+                leaderboardNameText[item.Position].text = $" {item.Position + 1}# {item.DisplayName}";
+                scoreText[item.Position].text = $"{item.StatValue}";
             }
         }
         

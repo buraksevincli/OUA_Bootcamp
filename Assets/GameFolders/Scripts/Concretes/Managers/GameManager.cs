@@ -1,5 +1,5 @@
+using System;
 using GameFolders.Scripts.Abstracts.Utilities;
-using GameFolders.Scripts.Concretes.Controllers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -10,10 +10,16 @@ namespace GameFolders.Scripts.Concretes.Managers
     {
         [SerializeField] private TMP_Text score;
         [SerializeField] private GameObject gameOverPanel;
+        [SerializeField] private TMP_Text lastScoreText;
         
         public int HeavyGunAmmo { get; set; }
         public int PistolAmmo { get; set; }
         public int Score { get; set; }
+
+        private void Start()
+        {
+            Time.timeScale = 1;
+        }
 
         private void OnEnable()
         {
@@ -30,6 +36,8 @@ namespace GameFolders.Scripts.Concretes.Managers
         private void GameOverHandler()
         {
             gameOverPanel.SetActive(true);
+            lastScoreText.text = Score.ToString();
+            Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.Confined;
         }
 
