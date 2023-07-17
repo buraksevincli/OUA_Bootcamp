@@ -119,10 +119,12 @@ https://trello.com/invite/b/MAd8Gx4E/ATTI57b59fba8ce8485c5194b5270f94ba6aAEBB382
 
 - **Daily Scrum**: Daily Scrum toplantıları, zaman sınırlılıkları nedeniyle günlük Whatsapp üzerinden konuşmalarla gerçekleştirilme kararı alındı.Bunun yanında Discord üzerinden üç günde bir yapılan toplantılar zaman uyuşmazlıkları nedeniyle müsait olan ekip üyeleriyle birlikte zamanlarına göre süreç değerlendirilip ne yapılacağı hakkında konuşulmaktadır. Örnek bir Daily Scrum toplantısı dosyası, Readme dosyasında tarafımca paylaşılmıştır.
 -  **Sprint 2 Daily Scrum Chats**:
--  https://1drv.ms/w/s!Aq-ZFEb-npHagns_H56KwqhifZrN?e=lUyahj
+-  https://1drv.ms/w/s!Aq-ZFEb-npHagns_H56KwqhifZrN?e=9m7qhe
 
 **Sprint board update: Sprint board screenshotları**: Backlog3
 ![Ekran görüntüsü 2023-07-17 031427](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/721b6681-fca7-452b-8c10-6ebcff9ed1a7)
 ![Ekran görüntüsü 2023-07-17 031350](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/affd7ef7-ae91-4fc5-9252-07b25dedf527)
 
 - **Ürün Durumu**: Ekran görüntüleri:
+- 
+
