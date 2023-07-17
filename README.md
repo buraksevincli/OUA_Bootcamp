@@ -14,7 +14,7 @@ Oyun ve Uygulama Akademisi
 - Yağmur Mine Saygılı: 3D Artist
 
 ## Ürün İsmi
-----
+- Post Apocalyptic Warfare (PAW)
 
 ## Product Backlog URL**:
 Unity Team U-165 Trello Backlog
@@ -115,16 +115,39 @@ https://trello.com/invite/b/MAd8Gx4E/ATTI57b59fba8ce8485c5194b5270f94ba6aAEBB382
 
 # Sprint 3
 
-- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan (tamamlanan puan 90)
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan (tamamlanan puan 95)
 
-- **Daily Scrum**: Daily Scrum toplantıları, zaman sınırlılıkları nedeniyle günlük Whatsapp üzerinden konuşmalarla gerçekleştirilme kararı alındı.Bunun yanında Discord üzerinden üç günde bir yapılan toplantılar zaman uyuşmazlıkları nedeniyle müsait olan ekip üyeleriyle birlikte zamanlarına göre süreç değerlendirilip ne yapılacağı hakkında konuşulmaktadır. Örnek bir Daily Scrum toplantısı dosyası, Readme dosyasında tarafımca paylaşılmıştır.
+- **Daily Scrum**: Daily Scrum toplantıları, zaman sınırlılıkları nedeniyle günlük Whatsapp üzerinden konuşmalarla gerçekleştirilme kararı alındı.Bunun yanında Discord üzerinden üç günde bir yapılan toplantılar zaman uyuşmazlıkları nedeniyle müsait olan ekip üyeleriyle birlikte üyelerin zamanlarına göre süreç değerlendirilip ne yapılacağı hakkında konuşulmaktadır. Örnek bir Daily Scrum toplantısı dosyası, Readme dosyasında tarafımca paylaşılmıştır.
 -  **Sprint 2 Daily Scrum Chats**:
 -  https://1drv.ms/w/s!Aq-ZFEb-npHagns_H56KwqhifZrN?e=9m7qhe
 
 **Sprint board update: Sprint board screenshotları**: Backlog3
-![Ekran görüntüsü 2023-07-17 031427](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/721b6681-fca7-452b-8c10-6ebcff9ed1a7)
 ![Ekran görüntüsü 2023-07-17 031350](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/affd7ef7-ae91-4fc5-9252-07b25dedf527)
+![Ekran görüntüsü 2023-07-17 031427](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/721b6681-fca7-452b-8c10-6ebcff9ed1a7)
 
 - **Ürün Durumu**: Ekran görüntüleri:
-- 
 
+![Ekran görüntüsü 2023-07-13 224055](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/40abeb23-2a97-4759-9391-77b9811f1026)
+![Ekran görüntüsü 2023-07-13 224045](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/6fd70aa9-697c-4f9a-8a6f-435317bf1822)
+![Ekran görüntüsü 2023-07-17 033800](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/535f15d0-a6c0-4ac0-b2de-acf6a0f0ace5)
+![Ekran görüntüsü 2023-07-17 033526](https://github.com/buraksevincli/OUA_Bootcamp/assets/135923265/b245f0cb-0a59-489a-b772-b595f9a6899f)
+
+**Sprint Review**: 
+Alınan kararlar:
+- Üçüncü sprintin başında belirlediğimiz hedeflere büyük ölçüde ulaşıldı.
+- Öncelikli olarak gerçekleştirmemiz gereken görevleri belirledik ve projenin ilerlemesini sağlamak için çalıştık.
+- İkinci sprintteki iletişim ve iş birliği süreçlerinde yaşadığımız zorlukları dikkate alarak, üçüncü sprintte iletişim ve iş birliği üzerinde daha fazla odaklanmaya çalışıldı.
+- Ekip üyelerinin sorumlulukları ve rolleri üçüncü sprint sonu raporu için gözden geçirildi. 
+
+**Sprint Review katılımcıları**:
+Hasan Mücahit Aktaş,Burak Sevinçli
+
+**Sprint Retrospective**:
+- Sprintin başında belirttiğimiz iletişimsizlik sorunu maalesef devam etti ve bu durum projenin ilerlemesini olumsuz etkiledi. 
+- Projeye katkısı olan isimler neredeyse sadece iki kişiyle sınırlı kaldı ve ekipteki genel isteksizlik devam etti.
+- Proje tamamlanmış olmasına rağmen başarı elde edildiği düşünülmüyor.
+- Bu deneyimden hareketle, ilerideki projelerde bu gibi sorunların tekrarlanmaması için üzerinde daha fazla durulacak ve iletişim eksikliği ile isteksizlik gibi hataların önlenmesi için çalışmalar yapılacak.
+
+## Product Backlog URL**:
+- Unity Team U-165 Trello Backlog Sprint 3
+https://trello.com/invite/b/KWdFtAEW/ATTI771d7223525016b0afab17b230e1ebf668CD2D22/sprint-3
