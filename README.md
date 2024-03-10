@@ -7,7 +7,7 @@ Oyun ve Uygulama Akademisi
 
 
 ## Takım Elemanları
-- Hasan Mücahit Aktaş: Scrum Master / Developer
+- Hasan Aras Aktaş: Scrum Master / Developer
 - Burak Sevinçli: Developer/ Product Owner
 - Kerim Kahramaner: 3D Artist 
 - Hüseyin Özgün: Developer
@@ -63,7 +63,7 @@ Alınan kararlar:
  - İletişim ve işbirliği süreçleri gözden geçirildi ve iyileştirmeler yapılması için adımlar atıldı.
  - Ekip üyelerinin sorumlulukları ve rolleri gözden geçirildi. Gerekli durumlarda rol değişiklikleri veya yeni sorumluluklar belirlenecek.
  **Sprint Review katılımcıları**: 
- Hasan Mücahit Aktaş,Burak Sevinçli,Kerim Kahramaner,Yağmur Mine Saygılı,Hüseyin Özgün
+ Hasan Aras Aktaş,Burak Sevinçli,Kerim Kahramaner,Yağmur Mine Saygılı,Hüseyin Özgün
 
  **Sprint Retrospective**:
 Retrospective toplantısında alınan kararlar arasında iletişimin düzeltilmesi ve takım çalışmasının geliştirilmesi için aşağıda belirtildi:
@@ -100,7 +100,7 @@ Alınan kararlar:
 - Ekip üyelerinin sorumlulukları ve rolleri ikinci sprint sonu raporu için gözden geçirildi. Gerekli durumlarda rol değişiklikleri veya yeni sorumluluklar belirlenecek..
 
 **Sprint Review katılımcıları**:
-Hasan Mücahit Aktaş,Burak Sevinçli,Kerim Kahramaner,Yağmur Mine Saygılı,Hüseyin Özgün
+Hasan Aras Aktaş,Burak Sevinçli,Kerim Kahramaner,Yağmur Mine Saygılı,Hüseyin Özgün
  
   **Sprint Retrospective**:
 - İletişimsizlik konusunda farkındalık oluşturuldu ve ekip üyeleri arasında daha sık ve etkili iletişim sağlanması için adımlar atıldı.
@@ -140,7 +140,7 @@ Alınan kararlar:
 - Ekip üyelerinin sorumlulukları ve rolleri üçüncü sprint sonu raporu için gözden geçirildi. 
 
 **Sprint Review katılımcıları**:
-Hasan Mücahit Aktaş,Burak Sevinçli
+Hasan Aras Aktaş,Burak Sevinçli
 
 **Sprint Retrospective**:
 - Sprintin başında belirttiğimiz iletişimsizlik sorunu maalesef devam etti ve bu durum projenin ilerlemesini olumsuz etkiledi. 
